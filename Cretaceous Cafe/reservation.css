@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(151, 0, 0);
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover';
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+}
+
+.title {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    margin: 2%;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+    
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(217, 222, 204);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.business_logo {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+    font-size: xx-large;
+}
+
+#logo_img{
+    width: 10rem;
+}
+
+.hours {
+    
+}
+
+.reservations_here {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(217, 222, 204);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.calander {
+    background: rgb(161, 165, 141);
+    border-bottom: black;
+    border-style: solid;
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+#calander_text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calander_img {
+    width: 20rem;
+}
+
+.time {
+    background: rgb(161, 165, 141);
+    border-bottom: black;
+    border-style: solid;
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+#time_text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock_img {
+    width: 40rem;
+}
+
+.people {
+    background: rgb(161, 165, 141);
+    border-bottom: black;
+    border-style: solid;
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+    
+}
+
+#people_text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#people_img {
+    width: 20rem;
+}
+
+.button {
+    color: rgb(250, 252, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(247, 0, 3);
+    border-radius: 15px;
+}
+
+.pages {
+    justify-content: center;
+    background: rgb(250, 252, 242);
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    height: 8rem;
+    text-indent: 50px;
+    font-size: large;
+}
+
+#media {
+    display: flex;
+    align-self: flex-start;
+    width: 15rem;
+}
