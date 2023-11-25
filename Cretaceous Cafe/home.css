@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(151, 0, 0);
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover';
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Images/home/home_steak.jpg);
+    background-size: cover;
+    height: 160rem;
+    width: auto;
+}
+
+.home_page {
+    text-align: center;
+    font-size: 10rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    border-color: rgba(70, 31, 115, 0.3);
+    border-style: solid;
+    border-radius: 15px;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}

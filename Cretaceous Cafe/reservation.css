@@ -54,10 +54,6 @@ p {
     width: 10rem;
 }
 
-.hours {
-    
-}
-
 .reservations_here {
     display:flex;
     flex-direction: column;
