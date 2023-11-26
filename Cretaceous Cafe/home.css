@@ -121,69 +121,191 @@ p {
     height: 55rem;
 }
 
-.reviews {
-
-}
-
 #review_title {
-
+    font-size:5rem;
+    display: flex;
+    justify-content: center;
 }
 
 #review_text {
+    font-size:4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.review_img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #blonde {
-
+    width: 28rem;
 }
 
 #boldmen {
-
+    width: 30.9rem;
+    margin: 2%;
 }
 
 #redheads {
-
+    width: 28rem;
 }
 
-.specials {
-
+#featured_title {
+    font-size:4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#salmon {
-
+.featured_img {
+    /*we need*/  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#dinosaur_steak {
-
+.dinosaur_steak {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(217,222,204);
+    border-radius: 15px;
+    font-size: 2rem;
 }
 
-#seabass {
+#dinosaur_steak_img {
+    width: 25rem;
+}
 
+#dinosaur_steak_text {
+    margin: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
+}
+
+.salmon {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(217,222,204);
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+#salmon_img {
+    width: 29.5rem;
+    height: 26rem;
+    padding: 1%;
+    margin: 0.85%;
+}
+
+#salmon_text {
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
+}
+
+.seabass {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(217,222,204);
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+#seabass_img {
+    width: 25rem;
+}
+
+#seabass_text {
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
 }
 
 .ordering {
+    display: flex;
+}
 
+#ordering_title {
+    font-size:4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation_home {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(217,222,204);
+    border-radius: 15px;
+    font-size: 2rem;
 }
 
 #reservation_title {
-
+    color: rgb(71,53,44);
+    font-size:2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #reservation_text {
+    padding: 1%;
+    font-size: 1rem;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
+}
 
+.checkout_home {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(217,222,204);
+    border-radius: 15px;
+    font-size: 2rem;
 }
 
 #pickup_title {
-
+    color: rgb(71,53,44);
+    font-size:2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #pickup_text {
-
+    padding: 1%;
+    font-size: 1rem;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
 }
 
 #button {
-
+    padding: 1%;
+    font-size: 1rem;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*we need to figure out how to contain the background around the image, no extra room.*/    
 }
+
+
 
 .pages {
     justify-content: center;

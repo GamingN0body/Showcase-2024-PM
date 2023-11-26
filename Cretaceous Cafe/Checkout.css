@@ -54,3 +54,20 @@ h3 {}
     border-radius: 30px;
     width: 50%;
 }
+
+.pages {
+    justify-content: center;
+    background: rgb(250, 252, 242);
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    height: 8rem;
+    text-indent: 50px;
+    font-size: large;
+}
+
+#media {
+    display: flex;
+    align-self: flex-start;
+    width: 15rem;
+}
