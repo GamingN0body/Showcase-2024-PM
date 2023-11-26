@@ -25,8 +25,6 @@ p {
     color: rgb(250, 252, 242);
     padding: 1%;
     background: rgb(63.1%, 64.7%, 55.33%);
-    border-color: rgba(70, 31, 115, 0.3);
-    border-style: solid;
     border-radius: 15px;
     margin: 2%;
 }

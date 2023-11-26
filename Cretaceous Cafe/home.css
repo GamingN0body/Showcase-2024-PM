@@ -1,35 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(151, 0, 0);
 }
 
 h1, h2, h3 {
     font-family: 'Irish Grover';
+    color: rgb(250, 252, 242);
 }
 
 p {
     font-family: 'Bree Serif', serif;
+    color: rgb(250, 252, 242);
 }
 
 .title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-image: url(Images/home/home_steak.jpg);
     background-size: cover;
-    height: 160rem;
-    width: auto;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
 }
 
 .home_page {
     text-align: center;
-    font-size: 10rem;
+    font-size: 5rem;
     color: rgb(250, 252, 242);
-    padding: 1%;
+    padding: 3%;
     background: rgb(63.1%, 64.7%, 55.33%);
-    border-color: rgba(70, 31, 115, 0.3);
-    border-style: solid;
+    /*Please help make the box around the text fix the text, 
+    bassacly what i am asking for is if u know how to make
+    the box's height has high as the text.*/
     border-radius: 15px;
-    margin: 1%;
+    margin: 4%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.customer_favorite {
+    a {
+        color: rgb(250, 252, 242);
+    }
+}
+
+.menu_items_contanier {
+    text-align: center;
+    overflow: visible;
+    position: relative;
+
+}
+
+.menu_items {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.imgs > #meals, #kids_meal, #drinks, #favoites{
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform: scale(1);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_items_container img {
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-nav {
+    z-index: 2;
+    bottom: 1rem;
+    left: 50%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.img-nav > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    margin: 0 0.25rem;
+    box-shadow: 0 1px 2px rgba(20, 55, 158, 0.3);
+}
+
+#meals {
+    width: 75rem;
+    height: 55rem;
+}
+
+#kids_meal {
+    width: 75rem;
+    height: 55rem;
+}
+
+#drinks {
+    width: 75rem;
+    height: 55rem;
+}
+
+#favoites {
+    width: 5rem;
+    height: 55rem;
+}
+
+.reviews {
+
+}
+
+#review_title {
+
+}
+
+#review_text {
+
+}
+
+#blonde {
+
+}
+
+#boldmen {
+
+}
+
+#redheads {
+
+}
+
+.specials {
+
+}
+
+#salmon {
+
+}
+
+#dinosaur_steak {
+
+}
+
+#seabass {
+
+}
+
+.ordering {
+
+}
+
+#reservation_title {
+
+}
+
+#reservation_text {
+
+}
+
+#pickup_title {
+
+}
+
+#pickup_text {
+
+}
+
+#button {
+
+}
+
+.pages {
+    justify-content: center;
+    background: rgb(250, 252, 242);
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    height: 8rem;
+    text-indent: 50px;
+    font-size: large;
+}
+
+#media {
+    display: flex;
+    align-self: flex-start;
+    width: 15rem;
 }
