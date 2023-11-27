@@ -42,17 +42,16 @@ p {
     flex-wrap: wrap;
 }
 
+/*Carousel*/
 .customer_favorite {
-    a {
-        color: rgb(250, 252, 242);
-    }
+
 }
 
-.menu_items_contanier {
+.menu_items_container {
     text-align: center;
     overflow: visible;
     position: relative;
-
+    margin:20%;
 }
 
 .menu_items {
@@ -63,11 +62,27 @@ p {
     -webkit-overflow-scrolling: touch;
 }
 
-.imgs > #meals, #kids_meal, #drinks, #favoites{
+.menu_items::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.menu_items::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.menu_items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.img-nav > div {
     scroll-snap-align: start;
     flex-shrink: 0;
     transform: scale(1);
+    transition: transform 0.5s;
     object-fit: cover;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,10 +96,10 @@ p {
 }
 
 .img-nav {
+    position:static;
     z-index: 2;
     bottom: 1rem;
     left: 50%;
-    display: flex;
     display: flex;
     justify-content: center;
 }
@@ -100,6 +115,8 @@ p {
     margin: 0 0.25rem;
     box-shadow: 0 1px 2px rgba(20, 55, 158, 0.3);
 }
+
+
 
 #meals {
     width: 75rem;
@@ -120,6 +137,8 @@ p {
     width: 5rem;
     height: 55rem;
 }
+
+/*Carousel end*/
 
 #review_title {
     font-size:5rem;
