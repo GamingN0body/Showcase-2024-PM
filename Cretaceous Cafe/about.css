@@ -65,60 +65,76 @@ p {
     display:flex;
     flex-direction: row;
     flex-flow: row;
+    justify-content: center;
 }
 
 .group_loghan {
+    padding: 1%;
     display:flex;
     flex-direction: column;
     flex-flow: column;
 }
 
 #img_loghan {
-    position: relative;
     width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-items: center;
+    align-self: center;
 }
 
 .loghan {
+    padding: 1%;
     margin: 2%;
     background: rgb(161, 165, 141);
     border-radius: 15px;
-    height: 10rem; 
+    width: 35rem;
 }
 
 .group_richarch {
+    padding: 1%;
     display:flex;
     flex-direction: column;
     flex-flow: column;
 }
 
 #img_richarch {
-    position: relative;
     width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-items: center;
+    align-self: center;
 }
 
 .richarch {
+    padding: 1%;
     margin: 2%;
     background: rgb(161, 165, 141);
     border-radius: 15px;
-    height: 10rem;  
+    width: 35rem; 
 }
 
 .group_gavin {
+    padding: 1%;
     display:flex;
     flex-direction: column;
     flex-flow: column;
 }
 
 #img_gavin{
-    position: relative;
-    width: 30rem;
+    width: 35rem;
+    height: 30rem;
+    display: flex;
+    justify-items: center;
+    align-self: center;
 } 
 
 .gavin {
     margin: 2%;
+    padding: 1%;
     background: rgb(161, 165, 141);
     border-radius: 15px;
-    height: 10rem; 
+    width: 35rem;
 }
 
 .pages {
