@@ -3,7 +3,15 @@
 }
 
 body {
-    background-color: rgb(151, 0, 0);
+    margin: 0%;
+    
+}
+
+main {
+    background-image: url(Images/main-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3 {
@@ -32,7 +40,7 @@ p {
     font-size: 5rem;
     color: rgb(250, 252, 242);
     padding: 3%;
-    background: rgb(63.1%, 64.7%, 55.33%);
+    background: rgb(49,110,53);
     /*Please help make the box around the text fix the text, 
     bassacly what i am asking for is if u know how to make
     the box's height has high as the text.*/
@@ -42,9 +50,19 @@ p {
     flex-wrap: wrap;
 }
 
+#title_text1 {
+    margin: 0%;
+}
+
 /*Carousel*/
 .customer_favorite {
-
+    margin: 0%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    text-align: center;
 }
 
 .menu_items_container {
@@ -60,6 +78,7 @@ p {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    overflow: hidden;
 }
 
 .menu_items::-webkit-scrollbar {
@@ -108,7 +127,7 @@ p {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    background: rgb(255, 255, 255);
+    background: rgb(49,110,53);
     align-items: center;
     justify-content: center;
     border-radius: 15%;
@@ -193,7 +212,7 @@ p {
 .dinosaur_steak {
     padding: 1%;
     margin: 1%;
-    background: rgb(217,222,204);
+    background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -212,7 +231,7 @@ p {
 .salmon {
     padding: 1%;
     margin: 1%;
-    background: rgb(217,222,204);
+    background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -234,7 +253,7 @@ p {
 .seabass {
     padding: 1%;
     margin: 1%;
-    background: rgb(217,222,204);
+    background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -265,14 +284,15 @@ p {
 .reservation_home {
     padding: 1%;
     margin: 1%;
-    background: rgb(217,222,204);
+    background: rgb(31,108,61);
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 3rem;
+    width: 50%;
 }
 
 #reservation_title {
     color: rgb(71,53,44);
-    font-size:2rem;
+    font-size: 4rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -280,9 +300,10 @@ p {
 }
 
 #reservation_text {
+    font-size: 3rem;
     padding: 1%;
-    font-size: 1rem;
-    background: rgb(63.1%, 64.7%, 55.33%);
+    font-size: 2rem;
+    background: rgb(191,222,133);
     color: rgb(71,53,44);
     border-radius: 15px;
 }
@@ -290,14 +311,15 @@ p {
 .checkout_home {
     padding: 1%;
     margin: 1%;
-    background: rgb(217,222,204);
+    background: rgb(31,108,61);
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 3rem;
+    width: 50%;
 }
 
 #pickup_title {
     color: rgb(71,53,44);
-    font-size:2rem;
+    font-size: 4rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -305,16 +327,17 @@ p {
 }
 
 #pickup_text {
+    font-size: 3rem;
     padding: 1%;
-    font-size: 1rem;
-    background: rgb(63.1%, 64.7%, 55.33%);
+    font-size: 2rem;
+    background: rgb(191,222,133);
     color: rgb(71,53,44);
     border-radius: 15px;
 }
 
 #button {
     padding: 1%;
-    font-size: 1rem;
+    font-size: 2rem;
     background: rgb(190,157,77);
     border-radius: 15px;
     text-align: center;
@@ -323,8 +346,6 @@ p {
     align-items: center;
     /*we need to figure out how to contain the background around the image, no extra room.*/    
 }
-
-
 
 .pages {
     justify-content: center;
