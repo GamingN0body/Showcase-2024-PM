@@ -217,14 +217,13 @@ p {
 }
 
 .featured_food_home {
-    
     /*we need*/  
     display: flex;
     flex-direction: row;
 }
 
 .dinosaur_steak {
-    max-width: 33%;
+    max-width: 30%;
     padding: 1%;
     margin: 3rem;
     background: rgb(49,110,53);
@@ -244,7 +243,7 @@ p {
 }
 
 .salmon {
-    max-width: 33%;
+    max-width: 30%;
     padding: 1%;
     margin: 3rem;
     background: rgb(49,110,53);
@@ -264,7 +263,7 @@ p {
 }
 
 .seabass {
-    max-width: 33%;
+    max-width: 30%;
     padding: 1%;
     margin: 3rem;
     background: rgb(49,110,53);
