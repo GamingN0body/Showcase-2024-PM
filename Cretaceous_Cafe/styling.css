@@ -15,6 +15,7 @@ main {
 }
 
 h1, h2, h3 {
+    margin: 0%;
     font-family: 'Irish Grover';
     color: rgb(250, 252, 242);
 }
@@ -24,7 +25,32 @@ p {
     color: rgb(250, 252, 242);
 }
 
-.title {
+img {
+    max-width: 100%;
+    width: 30%;
+    margin: 1%;
+}
+
+[role="banner"] {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 3%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[role="textbox"] {
+    color: rgb(250, 252, 242);
+    font-size: 2rem;
+}
+
+/*Homepage*/
+.home_page_title {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -33,29 +59,6 @@ p {
     background-position-y:center;
     background-position-x:center;
     height: 50rem;
-}
-
-.home_page {
-    text-align: center;
-    font-size: 5rem;
-    color: rgb(250, 252, 242);
-    padding: 3%;
-    background: rgb(49,110,53);
-    /*Please help make the box around the text fix the text, 
-    bassacly what i am asking for is if u know how to make
-    the box's height has high as the text.*/
-    border-radius: 15px;
-    margin: 4%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#title_text1 {
-    margin: 0%;
-}
-
-.favorite {
-    margin: 0;
 }
 
 /*Carousel*/
@@ -67,7 +70,6 @@ p {
 }
 
 #menu_title_home {
-
     margin: 0;
 }
 
@@ -141,35 +143,10 @@ p {
     box-shadow: 0 1px 2px rgba(20, 55, 158, 0.3);
 }
 
-#meals {
-    width: 75rem;
-    height: 55rem;
-}
-
-#kids_meal {
-    width: 75rem;
-    height: 55rem;
-}
-
-#drinks {
-    width: 75rem;
-    height: 55rem;
-}
-
-#favoites {
-    width: 5rem;
-    height: 55rem;
-}
-
-/*Carousel end*/
-
 .reviews {
     padding: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
-}
-
-.review_text {
 }
 
 #review_title {
@@ -191,21 +168,6 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-#blonde {
-    width: 29%;
-    margin: 1%;
-}
-
-#boldmen {
-    width: 33.4%;
-    margin: 2%;
-}
-
-#redheads {
-    width: 29%;
-    margin: 1%;
 }
 
 #featured_title {
@@ -231,9 +193,6 @@ p {
     font-size: 2rem;
 }
 
-#dinosaur_steak_img {
-    width: 100%;
-}
 
 #dinosaur_steak_text {
     padding: 1%;
@@ -359,6 +318,15 @@ p {
     align-items: center;
     /*we need to figure out how to contain the background around the image, no extra room.*/    
 }
+
+/*homepage end*/
+
+
+
+
+
+
+
 
 .pages {
     justify-content: center;
