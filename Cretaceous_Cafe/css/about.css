@@ -1,24 +1,4 @@
-body {
-    background-color: rgb(151, 0, 0);
-}
 
-h1, h2, h3 {
-    font-family: 'Irish Grover';
-}
-
-p {
-    font-family: 'Bree Serif', serif;
-}
-
-.title {
-    display: flex;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-    background-image: url(Images/about/volcano.jpg);
-    background-size: cover;
-    height: 70rem;
-}
 
 #title_text {
     font-size: 5rem;

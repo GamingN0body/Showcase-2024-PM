@@ -9,7 +9,6 @@ body {
 
 main {
     background-image: url(Images/main-bg.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -48,6 +47,24 @@ img {
     color: rgb(250, 252, 242);
     font-size: 2rem;
 }
+
+[role="doc-subtitle"] {
+    text-align: center;
+    font-size: 3rem;
+}
+
+[role="row"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text_title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* I was here :3 */
 
 /*Homepage*/
 .home_page_title {
@@ -149,42 +166,15 @@ img {
     border-radius: 15px;
 }
 
-#review_title {
-    font-size:5rem;
-    display: flex;
-    justify-content: center;
-}
-
 #review_paragraph {
-    font-size:4rem;
+    font-size:2rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.review_img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#featured_title {
-    font-size:4rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.featured_food_home {
-    /*we need*/  
-    display: flex;
-    flex-direction: row;
-}
-
-.dinosaur_steak {
+.featured_hp {
     max-width: 30%;
     padding: 1%;
     margin: 3rem;
@@ -193,67 +183,22 @@ img {
     font-size: 2rem;
 }
 
-
-#dinosaur_steak_text {
+#featured_text {
     padding: 1%;
     background: rgb(63.1%, 64.7%, 55.33%);
     color: rgb(71,53,44);
     border-radius: 15px;
 }
 
-.salmon {
-    max-width: 30%;
-    padding: 1%;
-    margin: 3rem;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-    font-size: 2rem;
-}
-
-#salmon_img {
+#featured_img {
     width: 100%;
-}
-
-#salmon_text {
-    padding: 1%;
-    background: rgb(63.1%, 64.7%, 55.33%);
-    color: rgb(71,53,44);
-    border-radius: 15px;
-}
-
-.seabass {
-    max-width: 30%;
-    padding: 1%;
-    margin: 3rem;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-    font-size: 2rem;
-}
-
-#seabass_img {
-    width: 100%;
-}
-
-#seabass_text {
-    padding: 1%;
-    background: rgb(63.1%, 64.7%, 55.33%);
-    color: rgb(71,53,44);
-    border-radius: 15px;
 }
 
 .ordering {
     display: flex;
 }
 
-#ordering_title {
-    font-size:4rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.reservation_home {
+.order_hp {
     padding: 1%;
     margin: 1%;
     background: rgb(31,108,61);
@@ -262,8 +207,8 @@ img {
     width: 50%;
 }
 
-#reservation_title {
-    color: rgb(71,53,44);
+#order_title_hp {
+    color: rgb(250, 252, 242);
     font-size: 4rem;
     text-align: center;
     display: flex;
@@ -271,34 +216,7 @@ img {
     align-items: center;
 }
 
-#reservation_text {
-    font-size: 3rem;
-    padding: 1%;
-    font-size: 2rem;
-    background: rgb(191,222,133);
-    color: rgb(71,53,44);
-    border-radius: 15px;
-}
-
-.checkout_home {
-    padding: 1%;
-    margin: 1%;
-    background: rgb(31,108,61);
-    border-radius: 15px;
-    font-size: 3rem;
-    width: 50%;
-}
-
-#pickup_title {
-    color: rgb(71,53,44);
-    font-size: 4rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#pickup_text {
+#order_text_hp {
     font-size: 3rem;
     padding: 1%;
     font-size: 2rem;
@@ -318,11 +236,19 @@ img {
     align-items: center;
     /*we need to figure out how to contain the background around the image, no extra room.*/    
 }
-
 /*homepage end*/
-
-
-
+/*about page*/
+.about_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url();
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+}
+/*about page end*/
 
 
 
