@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    
+}
+
+main {
+    background-image: url(Images/main-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover';
+    color: rgb(250, 252, 242);
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+    color: rgb(250, 252, 242);
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 6rem;
+}
+
+.review {
+    font-size: 4rem;
+    background-color: rgb(191,222,133);
+}
+
+.r1 {
+    display: flex;
+}
+
+#r1_text {
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+#r1_image {
+    max-width: 25%;
+    width: 100%;
+    padding: 1%;
+}
+
+.r2 {
+    display: flex;
+}
+
+#r2_text {
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+#r2_image {
+    max-width: 25%;
+    width: 100%;
+    padding: 1%;
+}
+
+.r3 {
+    display: flex;
+}
+
+#r3_text {
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+#r3_image {
+    max-width: 25%;
+    width: 100%;
+    padding: 1%;
+}
+
+.r4 {
+    display: flex;
+}
+
+#r4_text {
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+#r4_image {
+    max-width: 25%;
+    width: 100%;
+    padding: 1%;
+}
+
+.pages {
+    justify-content: center;
+    background: rgb(250, 252, 242);
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    height: 8rem;
+    text-indent: 50px;
+    font-size: large;
+}
+
+#media {
+    display: flex;
+    align-self: flex-start;
+    width: 15rem;
+}

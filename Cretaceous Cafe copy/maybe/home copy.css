@@ -59,81 +59,58 @@ p {
 }
 
 /*Carousel*/
-.customer_favorite {
-    background: rgb(49,110,53);
-    border-radius: 15px;
+    
+
+.menu_items_contanier {
+    overflow: hidden;
+    width: 50rem;
     text-align: center;
-    font-size: 3rem;
-}
 
-#menu_title_home {
-
-    margin: 0;
-}
-
-.menu_items_container {
-    text-align: center;
-    overflow: visible;
     position: relative;
-    margin:20%;
 }
 
 .menu_items {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    overflow: hidden;
 }
 
-.menu_items::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.menu_items::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-}
-
-.menu_items::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.img-nav > div {
+.menu_items > div {
     scroll-snap-align: start;
     flex-shrink: 0;
+    width: 50rem;
+    height: 25rem;
     transform: scale(1);
-    transition: transform 0.5s;
     object-fit: cover;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu_items_container img {
+.img-container  {
     object-fit: fill;
     position: absolute;
     top: 0;
     left: 0;
+    width: 50%;
+    height: 50%;
 }
 
 .img-nav {
-    position:static;
+    position: absolute;
     z-index: 2;
     bottom: 1rem;
     left: 50%;
     display: flex;
-    justify-content: center;
 }
 
 .img-nav > a {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    background: rgb(49,110,53);
+    background: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     border-radius: 15%;
@@ -141,36 +118,7 @@ p {
     box-shadow: 0 1px 2px rgba(20, 55, 158, 0.3);
 }
 
-#meals {
-    width: 75rem;
-    height: 55rem;
-}
-
-#kids_meal {
-    width: 75rem;
-    height: 55rem;
-}
-
-#drinks {
-    width: 75rem;
-    height: 55rem;
-}
-
-#favoites {
-    width: 5rem;
-    height: 55rem;
-}
-
 /*Carousel end*/
-
-.reviews {
-    padding: 1%;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-}
-
-.review_text {
-}
 
 #review_title {
     font-size:5rem;
@@ -178,7 +126,7 @@ p {
     justify-content: center;
 }
 
-#review_paragraph {
+#review_text {
     font-size:4rem;
     text-align: center;
     display: flex;
@@ -216,44 +164,46 @@ p {
     align-items: center;
 }
 
-.featured_food_home {
-    
+.featured_img {
     /*we need*/  
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .dinosaur_steak {
-    max-width: 33%;
     padding: 1%;
-    margin: 3rem;
+    margin: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
 
 #dinosaur_steak_img {
-    width: 100%;
+    width: 25rem;
 }
 
 #dinosaur_steak_text {
-    padding: 1%;
+    margin: 1%;
     background: rgb(63.1%, 64.7%, 55.33%);
     color: rgb(71,53,44);
     border-radius: 15px;
 }
 
 .salmon {
-    max-width: 33%;
     padding: 1%;
-    margin: 3rem;
+    margin: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
 
 #salmon_img {
-    width: 100%;
+    width: 29.5rem;
+    height: 26rem;
+    padding: 1%;
+    margin: 0.85%;
 }
 
 #salmon_text {
@@ -264,16 +214,15 @@ p {
 }
 
 .seabass {
-    max-width: 33%;
     padding: 1%;
-    margin: 3rem;
+    margin: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
     font-size: 2rem;
 }
 
 #seabass_img {
-    width: 100%;
+    width: 25rem;
 }
 
 #seabass_text {
