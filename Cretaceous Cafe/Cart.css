@@ -6,6 +6,10 @@ h1 {
     font-family: 'Irish Grover';
 }
 
+body {
+    background-color: rgb(150, 0, 0);
+}
+
 .title {
     display: flex;
     font-size: x-large;
@@ -19,7 +23,22 @@ h1 {
     margin: 2%;
 }
 
-body {
-    background-color: rgb(150, 0, 0);
+.order {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(217, 217, 217);
+    border-radius: 30px;
+    width: 50%;
 }
 
+.order_title {
+    background-color: #BE9D4D;
+}
+
+.order_icon {
+    width: 100%;
+    height: auto;
+}

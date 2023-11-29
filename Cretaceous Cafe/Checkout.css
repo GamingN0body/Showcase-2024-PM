@@ -4,8 +4,18 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Bree+Serif&family=Iceland&display=swap);
 
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(150, 0, 0);
+    background-image: url(Images/main-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(49, 110, 53);
 }
 
 h1 {
@@ -21,7 +31,14 @@ p {
     opacity: 70%;
 }
 
-h3 {}
+h3 {
+    font-family: 'Gothic A1', serif;
+}
+
+.groups .order-deets {
+    display: flex;
+    align-items: flex-start;
+}
 
 .title {
     display: flex;
@@ -70,18 +87,19 @@ h3 {}
 
 
 /* don't know how to make border longer*/
-.order-deets {
+#order-deets {
     display: flex;
     background: #D9D9D9;
     flex-direction: column;
     flex-flow: column wrap; 
+    justify-content: flex-end;
     align-content: stretch;
     font-size: x-large;
     margin: 2%;
     border-radius: 30px;
     width: 42%;
     align-items: flex-start;
-    transform: translate(50rem, -37rem)
+    /*transform: translate(50rem, -37rem)*/
 }
 
 .dropbtn {
@@ -100,7 +118,7 @@ h3 {}
 .drop-content {
     display: none;
     position: absolute;
-    background-color: rgb(49, 110, 53);
+    background-color: rgb(217, 217, 217);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -124,6 +142,10 @@ h3 {}
 .credit-drop:hover .dropbtn {
     background-color: #BE9D4D;
 }
+
+#line {
+    border-bottom: 1px solid #888;
+  }
 
 .pages {
     justify-content: center;
