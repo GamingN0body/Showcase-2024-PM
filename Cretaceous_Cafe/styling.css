@@ -41,7 +41,6 @@ img {
 
 .featured_title {
     background: rgb(190,157,77);
-    border-radius: 15px;
 }
 
 [role="banner"] {
@@ -118,11 +117,6 @@ img {
     border-radius: 15px;
 }
 
-.reviews_title_hp {
-    background: rgb(190,157,77);
-    border-radius: 15px;
-}
-
 #review_paragraph {
     font-size:2rem;
     text-align: center;
@@ -131,88 +125,12 @@ img {
     align-items: center;
 }
 
-/*Carousel*/
 .customer_favorite {
     background: rgb(190,157,77);
     border-radius: 15px;
     text-align: center;
     font-size: 3rem;
 }
-
-#menu_title_home {
-    margin: 0;
-}
-
-.menu_items_container {
-    text-align: center;
-    overflow: visible;
-    position: relative;
-    margin:20%;
-}
-
-.menu_items {
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    overflow: hidden;
-}
-
-.menu_items::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.menu_items::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-}
-
-.menu_items::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.img-nav > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    transform: scale(1);
-    transition: transform 0.5s;
-    object-fit: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu_items_container img {
-    object-fit: fill;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.img-nav {
-    position:static;
-    z-index: 2;
-    bottom: 1rem;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.img-nav > a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: rgb(49,110,53);
-    align-items: center;
-    justify-content: center;
-    border-radius: 15%;
-    margin: 0 0.25rem;
-    box-shadow: 0 1px 2px rgba(20, 55, 158, 0.3);
-}
-/*Carousel end*/
 
 .order_hp {
     padding: 1%;
@@ -462,14 +380,14 @@ img {
 /*menu end*/
 
 .pages {
-    justify-content: center;
+    font-size: 1.3rem;
+    height: 4rem;
+    text-indent: 30px;
     background: rgb(250, 252, 242);
     position: sticky;
     display:flex;
     flex-direction: row;
-    height: 8rem;
-    text-indent: 50px;
-    font-size: large;
+    justify-content: center;
 }
 
 #media {
