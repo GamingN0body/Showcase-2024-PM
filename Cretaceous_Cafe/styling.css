@@ -37,6 +37,7 @@ img {
     max-width: 100%;
     width: 30%;
     margin: 1%;
+    border-radius: 2em;
 }
 
 .featured_title {
@@ -96,6 +97,13 @@ img {
     height: 50rem;
 }
 
+.customer_favorite {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 3rem;
+}
+
 .featured_hp {
     max-width: 30%;
     padding: 1%;
@@ -114,6 +122,46 @@ img {
 
 #featured_img {
     width: 100%;
+}
+
+.order_hp {
+    height: 27rem;
+    padding: 1%;
+    margin: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    font-size: 3rem;
+    width: 50%;
+}
+
+#order_title_hp {
+    color: rgb(250, 252, 242);
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order_text_hp {
+    font-size: 3rem;
+    padding: 1%;
+    font-size: 2rem;
+    background: rgb(31,108,61);
+    color: rgb(250, 252, 242);
+    border-radius: 15px;
+}
+
+#button {
+    padding: 1%;
+    font-size: 2rem;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*we need to figure out how to contain the background around the image, no extra room.*/    
 }
 
 .reviews_hp {
@@ -135,50 +183,8 @@ img {
     align-items: center;
 }
 
-.customer_favorite {
-    background: rgb(190,157,77);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 3rem;
-}
-
-.order_hp {
-    padding: 1%;
-    margin: 1%;
-    background: rgb(31,108,61);
-    border-radius: 15px;
-    font-size: 3rem;
-    width: 50%;
-}
-
-#order_title_hp {
-    color: rgb(250, 252, 242);
-    font-size: 4rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#order_text_hp {
-    font-size: 3rem;
-    padding: 1%;
-    font-size: 2rem;
-    background: rgb(191,222,133);
-    color: rgb(71,53,44);
-    border-radius: 15px;
-}
-
-#button {
-    padding: 1%;
-    font-size: 2rem;
-    background: rgb(190,157,77);
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*we need to figure out how to contain the background around the image, no extra room.*/    
+#people_img {
+    margin: 2%;
 }
 /*homepage end*/
 
@@ -271,6 +277,13 @@ img {
 /*about page end*/
 
 /*review page*/
+#review {
+    margin-top: 3%;
+    padding: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px
+}
+
 .review_title {
     font-size: 6rem;
     text-align: center;
@@ -288,7 +301,7 @@ img {
 }
 
 #review_image {
-    max-width: 25%;
+    max-width: 20%;
     width: 100%;
     padding: 1%;
 }
@@ -391,7 +404,166 @@ img {
 }
 /*menu end*/
 
+/*reservation*/
+.title {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background:  rgb(49,110,53);
+    border-radius: 15px;
+    margin: 0%;
+}
+
+#week_day {
+    border-bottom: solid;
+    border-color: black;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.business_logo {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+    font-size: xx-large;
+    border-bottom: solid;
+    border-color: black;
+}
+
+#logo_img{
+    width: 15rem;
+}
+
+#smaller_text {
+    margin: 0%;
+    font-size: 3rem;
+}
+
+.hours {
+    text-align: center;
+    font-size: larger;
+}
+
+#menu_item_paragraph_r {
+    font-size: large;
+}
+
+#cart_r {
+    width: 25%;
+}
+
+.reservations_here {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    margin: 1%;
+    font-size: x-large;
+    background:rgb(49,110,53);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.icons span:last-child{
+  margin-right: -10px;
+}
+
+.icons span:hover{
+  background: #F70003;
+}
+
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar li{
+  color: #D9DECC;
+  width: 13%;
+  font-size: 1.07rem;
+}
+
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 0.4rem;
+}
+
+.days li.inactive{
+  color: rgb(113,118,104);
+}
+
+.days li.active{
+ color: rgb(250,252,242);
+}
+
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 2rem;
+  width: 2rem;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li:not(.active):hover::before{
+    background: #F70003;
+}
+
+.reservation_icon {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+#reservation_icon_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservation_icon_img {
+    width: 20rem;
+}
+
+.button {
+    color: rgb(250, 252, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+}
+/*reservation end*/
+
+
 .pages {
+    margin: 0%;
     font-size: 1.3rem;
     height: 4rem;
     text-indent: 30px;

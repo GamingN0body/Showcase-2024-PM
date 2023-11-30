@@ -13,65 +13,116 @@
 </head>
 
 <body>
-    <section class="title" role="banner">
-        <h1>Reservations</h1>
-    </section>
-    <section class="row">
-        <section class="left">
-            <section class="business_logo">
-                <img id="logo_img" src="/Cretaceous Cafe//Cretaceous_Cafe/Images/logo.png" alt="business logo">
-                <h2 id="text_title">Business Hours</h2>
-            </section>
-            <section class="hours" >
-                <p id="text_title">
-                    10:00 am to 9:00
-                    <br> All day 'er day
-                </p>
-            </section>
+    <main>
+        <section class="title" role="banner">
+            <h1>Reservations</h1>
         </section>
-        <section class="reservations_here">
-            <h2>Make Reservations Here:</h2>
+        <section class="row">
+            <section class="left">
+                <section class="business_logo">
+                    <img id="logo_img" src="/Cretaceous_Cafe/Images/logo.png" alt="business logo">
+                    <h2 id="text_title">
+                        Business Hours:
+                        <p id="smaller_text"> 10:00 am to 9:00
+                        <br> All day 'er day </p>
+                    </h2>
+                </section>
+                <section class="hours">
+                </section>
+                <section class="featured">
+                    <section class="specials" role="rowgroup">
+                        <section role="row">
+                            <section class="menu_item" role="group">
+                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/dino steak.jpg"
+                                    alt="Image of a dinosaur steak.">
+                                <h3 id="menu_item_title_r">Dinosaur Meat</h3>
+                                <p id="menu_item_paragraph_r">
+                                    This rare, once in a lifetime dining experience offers a prepared meal made from
+                                    pure
+                                    dinosaur
+                                    meat
+                                    of
+                                    eliminated animals from Expeditions.
+                                </p>
+                                <a href="Cart.html"><img id="cart_r" role="button"
+                                        src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
+                                        alt="Image of a clickable cart, that takes you to the cart page.."></a>
+                            </section>
+                            <section class="menu_item" role="group">
+                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/sea bass.jpg"
+                                    alt="Image of seabass.">
+                                <h3 id="menu_item_title_r">Chilean Sea Bass</h3>
+                                <p id="menu_item_paragraph_r">
+                                    It’s the chief's favorite and our most iconic dish.
+                                    People like John Hammond and Ian Malcolm had given it good reviews.
+                                </p>
+                                <a href="Cart.html"><img id="cart_r" role="button"
+                                        src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
+                                        alt="Image of a clickable cart, that takes you to the cart page.."></a>
+                            </section>
+                            <section class="menu_item" role="group">
+                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/salmon.jpg"
+                                    alt="Image of grilled salmon.">
+                                <h3 id="menu_item_title_r">Piscivore</h3>
+                                <p id="menu_item_paragraph_r">
+                                    A grilled salmon. Made with a special ingredient by our Owner, Alain Richard.
+                                    It is seasoned with dry mustard powder.
+                                </p>
+                                <a href="Cart.html"><img id="cart_r" role="button"
+                                        src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
+                                        alt="Image of a clickable cart, that takes you to the cart page."></a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="reservations_here">
                 <section class="wrapper">
-                      <p class="current-date"></p>
-                      <section class="icons">
+                    <p class="current-date"></p>
+                    <section class="icons">
                         <span id="prev" class="material-symbols-rounded">chevron_left</span>
                         <span id="next" class="material-symbols-rounded">chevron_right</span>
-                      </section>
-                    <section class="calendar">
-                      <ul class="weeks">
-                        <li>Sun</li>
-                        <li>Mon</li>
-                        <li>Tue</li>
-                        <li>Wed</li>
-                        <li>Thu</li>
-                        <li>Fri</li>
-                        <li>Sat</li>
-                      </ul>
-                      <ul class="days"></ul>
                     </section>
-                </section>              
-            <section class="time">
-                <img id="time_img" src="/Cretaceous_Cafe/Images/Reservations/Cloc-removebg-preview.png"
-                    alt="The clock for the time of reservations.">
-                <p id="text_title">
-                    Time PM
-                </p>
-            </section>
-            <section class="people">
-                <img id="people_img" src="/Cretaceous_Cafe/Images/Reservations/People_person-removebg-preview.png"
-                    alt="An icon representing the amount of people.">
-                <p id="text_title">
-                    2 Peeps
-                </p>
-            </section>
-            <section class="button">
-                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-                    Click Here</button>
-                <h3 id="demo"></p>
+                    <section class="calendar">
+                        <ul class="weeks">
+                            <li id="week_day">Sunday</li>
+                            <li id="week_day">Monday</li>
+                            <li id="week_day">Tuesday</li>
+                            <li id="week_day">Wednesday</li>
+                            <li id="week_day">Thusday</li>
+                            <li id="week_day">Friday</li>
+                            <li id="week_day">Saturday</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </section>
+                </section>
+                <section role="row">
+                    <section class="reservation_icon">
+                        <img id="reservation_icon_img"
+                            src="/Cretaceous_Cafe/Images/Reservations/Cloc-removebg-preview.png"
+                            alt="The clock for the time of reservations.">
+                        <p id="reservation_icon_text">
+                            Time PM
+                        </p>
+                    </section>
+                    <section class="reservation_icon">
+                        <img id="reservation_icon_img"
+                            src="/Cretaceous_Cafe/Images/Reservations/People_person-removebg-preview.png"
+                            alt="An icon representing the amount of people.">
+                        <p id="reservation_icon_text">
+                            2 Peeps
+                        </p>
+                    </section>
+                </section>
+                <section class="button">
+                    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                        Click Here</button>
+                    <h3 id="demo">
+                        </p>
+                </section>
             </section>
         </section>
-    </section>
-
+    </main>
     <footer>
         <section class="pages">
             <h2><a id="pages_link" href="Homepage.html">Cretaceous Cafe</a></h2>
