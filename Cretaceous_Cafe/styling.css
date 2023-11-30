@@ -77,6 +77,11 @@ img {
     text-align: center;
 }
 
+#text_link:link,
+#text_link:visited {
+    color: rgb(250, 252, 242);
+}
+
 /* I was here :3 */
 
 /*Homepage*/
@@ -114,6 +119,11 @@ img {
 .reviews_hp {
     padding: 1%;
     background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+.reviews_title_hp {
+    background: rgb(190,157,77);
     border-radius: 15px;
 }
 
@@ -223,6 +233,7 @@ img {
 .employees_ {
     display:flex;
     flex-direction: row;
+    justify-content: center;
     flex-flow: row;
 }
 
@@ -231,7 +242,8 @@ img {
     padding: 1%;
     background: rgb(31,108,61);
     border-radius: 15px;
-    width: 30rem;
+    width: 35rem;
+    height: 35rem;
 }
 
 .employees_group {
