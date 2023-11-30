@@ -39,6 +39,11 @@ img {
     margin: 1%;
 }
 
+.featured_title {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+}
+
 [role="banner"] {
     text-align: center;
     font-size: 5rem;
@@ -91,7 +96,7 @@ img {
     max-width: 30%;
     padding: 1%;
     margin: 3rem;
-    background: rgb(49,110,53);
+    background: rgb(190,157,77);
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -113,6 +118,11 @@ img {
     border-radius: 15px;
 }
 
+.reviews_title_hp {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+}
+
 #review_paragraph {
     font-size:2rem;
     text-align: center;
@@ -123,7 +133,7 @@ img {
 
 /*Carousel*/
 .customer_favorite {
-    background: rgb(49,110,53);
+    background: rgb(190,157,77);
     border-radius: 15px;
     text-align: center;
     font-size: 3rem;
