@@ -1,0 +1,58 @@
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("Images/menu/Firefly jurassic jungle landscape with city-restaurant within the forest of cradle mountain 9370.jpg");
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 3%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#title_text1 {
+    margin: 0%;
+    font-size: 10rem;
+    display: flex;
+}
+
+#cart {
+    max-width: 33%;
+    width: 10%;
+}
+
+[role="button"] {
+    max-width: 33%;
+    width: 10%;
+}
+
+[role="rowgroup"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[role="rowheader"] {
+}
+
+[role="group"] {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 33%;
+    width: 33%;
+}
+
