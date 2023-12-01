@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     background-image: url(Images/main-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -29,6 +29,10 @@ h3 {
     font-family: 'Gothic A1', serif;
 }
 
+h2, p {
+    color: black;
+}
+
 .groups_checkout, .order-deets {
     display: flex;
     align-items: flex-start;
@@ -39,7 +43,6 @@ h3 {
     font-size: xx-large;
     align-items: center;
     justify-content: flex-start;
-    /*center it l8r*/
     height: 10rem;
     font-size: 5rem;
     color: rgb(250, 252, 242);
@@ -80,7 +83,7 @@ h3 {
 
 
 
-/* don't know how to make border longer*/
+
 #order-deets {
     display: flex;
     background: #D9D9D9;
@@ -93,7 +96,6 @@ h3 {
     border-radius: 30px;
     width: 42%;
     align-items: flex-start;
-    /*transform: translate(50rem, -37rem)*/
 }
 
 .dropbtn {

@@ -49,7 +49,7 @@ img {
 [role="banner"] {
     text-align: center;
     font-size: 5rem;
-    color: rgb(250, 252, 242);
+    /*color: rgb(250, 252, 242);*/
     padding: 3%;
     background: rgb(49,110,53);
     border-radius: 15px;
@@ -86,6 +86,7 @@ img {
 }
 
 /* I was here :3 */
+/*Kilroy is that you?*/
 
 /*Homepage*/
 .home_page_title {
@@ -608,7 +609,7 @@ img {
     width: 50%;
 }
 
-/* don't know how to make border longer*/
+
 #order-deets {
     display: flex;
     background: #D9D9D9;
@@ -621,7 +622,6 @@ img {
     border-radius: 30px;
     width: 42%;
     align-items: flex-start;
-    /*transform: translate(50rem, -37rem)*/
 }
 
 .dropbtn {
