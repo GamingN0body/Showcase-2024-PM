@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-@import url(https://fonts.googleapis.com/css2?family=Iceland&display=swap);
-
-@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&family=Iceland&display=swap);
-
-@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
 
 * {
     box-sizing: border-box;
@@ -35,7 +29,7 @@ h3 {
     font-family: 'Gothic A1', serif;
 }
 
-.groups .order-deets {
+.groups_checkout, .order-deets {
     display: flex;
     align-items: flex-start;
 }
@@ -147,19 +141,3 @@ h3 {
     border-bottom: 1px solid #888;
   }
 
-.pages {
-    justify-content: center;
-    background: rgb(250, 252, 242);
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    height: 8rem;
-    text-indent: 50px;
-    font-size: large;
-}
-
-#media {
-    display: flex;
-    align-self: flex-start;
-    width: 15rem;
-}
