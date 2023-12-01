@@ -96,6 +96,11 @@ h2, p {
     border-radius: 30px;
     width: 42%;
     align-items: flex-start;
+    border-style: solid;
+}
+
+#lineage {
+    height: 10px;
 }
 
 .dropbtn {

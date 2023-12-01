@@ -573,11 +573,23 @@ img {
     /*center it l8r*/
     height: 10rem;
     font-size: 5rem;
-    color: rgb(250, 252, 242);
+    color: rgb(217, 217, 217);
     padding: 1%;
     background: rgb(161, 165, 141);
     border-radius: 15px;
     margin: 2%;
+}
+
+#custhead {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(161, 165, 141);
+    border-radius: 3px;
+    width: 95%;
+    align-items: center;
 }
 
 .row {
@@ -592,9 +604,10 @@ img {
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(217, 217, 217);
+    background: rgb(161, 165, 141);
     border-radius: 30px;
     width: 50%;
+    align-items: flex-start;
 }
 
 
@@ -604,7 +617,7 @@ img {
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(217, 217, 217);
+    background: rgb(161, 165, 141);
     border-radius: 30px;
     width: 50%;
 }
@@ -612,7 +625,7 @@ img {
 
 #order-deets {
     display: flex;
-    background: #D9D9D9;
+    background: rgb(161, 165, 141);
     flex-direction: column;
     flex-flow: column wrap; 
     justify-content: flex-end;
@@ -622,6 +635,10 @@ img {
     border-radius: 30px;
     width: 42%;
     align-items: flex-start;
+}
+
+#underlien {
+    border-bottom-style: solid;
 }
 
 .dropbtn {
@@ -667,9 +684,7 @@ img {
 
 #line {
     border-bottom: 1px solid #888;
-  }
-
-
+}
 /*checkout end*/
 
 /*cart*/
@@ -682,6 +697,7 @@ img {
     font-size: 5rem;
     color: rgb(250, 252, 242);
     background: rgb(161, 165, 141);
+    
     border-radius: 15px;
     margin: 2%;
 }
