@@ -383,7 +383,7 @@ img {
     padding: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
-    height: 42rem;
+    height: 50rem;
 }
 
 #menu_item_img {
@@ -401,10 +401,21 @@ img {
 
 #cart {
     max-width: 33%;
-    width: 10%;
+    width: 500%;
+    scale: 4.7;
+    transform: translateX(3px);
+}
+
+.money {
+    max-width: 33%;
+    width: 20%;
+
+}
+
+#jurassicpay {
     display: flex;
-    justify-items: left;
-    align-items: flex-end;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 /*menu end*/
 
