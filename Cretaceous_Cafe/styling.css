@@ -399,17 +399,17 @@ img {
     font-size: 1.5rem;
 }
 
-#cart {
+#cart-mone {
     max-width: 33%;
     width: 500%;
-    scale: 4.7;
-    transform: translateX(3px);
+    scale: 7.4;
+    transform: translateX(5px);
 }
 
 .money {
     max-width: 33%;
     width: 20%;
-
+transform: translateX(-5rem);
 }
 
 #jurassicpay {
@@ -560,6 +560,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(-25px);
 }
 
 #reservation_icon_img {
@@ -721,16 +722,82 @@ img {
     margin: 2%;
     background: rgb(217, 217, 217);
     border-radius: 30px;
-    width: 50%;
+    width: 45%;
+    height: min-content;
 }
 
 .order_title {
-    background-color: #BE9D4D;
+    background-color: rgb(49,110,53);
 }
 
 .order_icon {
     width: 100%;
     height: auto;
+}
+
+.pick_up {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+.dine {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+.C-specials {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    margin: 1%;
+    font-size: x-large;
+    background:rgb(49,110,53);
+    border-radius: 15px;
+    width: 75rem;
+}
+
+.cake_special {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#cake-title {
+    margin-right: 5rem;
+}
+
+.salmon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#salm-title {
+    margin-right: 5rem;
+}
+
+.dinosaur_meat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px;
+}
+
+#dino-title {
+    margin-right: 5rem;
+}
+
+.seabass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#seab-title {
+    margin-right: 2rem;
 }
 /*cart end*/
 
