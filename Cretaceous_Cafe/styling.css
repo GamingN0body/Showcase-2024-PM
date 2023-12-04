@@ -422,7 +422,25 @@ a:-webkit-any-link {
     justify-self: flex-end;
     align-self: flex-end;
 }
-/*menu end*/
+/*menu end
+
+                <section class="menu_item" role="group">
+                    <img id="menu_item_img"
+                        src="images/menu/Firefly seared brown steak with herbs and spices; cooking beef fillet 83841.jpg"
+                        alt="Image of a dinosaur steak.">
+                    <h3 id="menu_item_title">Dinosaur Meat</h3>
+                    <p id="menu_item_paragraph">
+                        Meat from the Expeditions section of the park.
+                    </p>
+                    <section class="menu_item_currency" role="row">
+                        <a href="#" class="addToCart prodBtn"><img class="money" id="cart-mone" role="button"
+                                src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
+                                alt="Image of a clickable cart, that takes you to the cart page.."></a>
+                        <p role="row"><img class="money" id="jurassicpay" src="Images/JurassicPAY Logo.png"
+                                alt="icon for money">
+                        </p>
+                    </section>
+                </section>*/
 
 /*reservation*/
 .title {
