@@ -14,39 +14,76 @@
 
 <body>
     <main>
-        <section class="groups_checkout" role="banner">
+        <section class="checkout_title" role="banner">
             <section class="title">
                 <h1>Checkout</h1>
             </section>
+        </section>
+        <section class="co_content" role="row">
             <section class="info">
-                <h2 id="custhead">Customer Info</h2>
-                <section class="first_name">
-                    <p>First Name:</p>
+                <h2 id="customer_info">Customer Info</h2>
+                <section role="row">
+                    <section class="first_name" id="inputs" role="row">
+                        <section class="column_items_co">
+                            <p>
+                                First Name:
+                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
+                                    size="61" />
+                            </p>
+                        </section>
+                    </section>
+                    <section class="last name" id="inputs" role="row">
+                        <section class="column_items_co">
+                            <p>
+                                Last Name:
+                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
+                                    size="61" />
+                            </p>
+                        </section>
+                    </section>
                 </section>
-                <section class="last name">
-                    <p>Last Name:</p>
+                <section role="row">
+                    <section class="phone" id="inputs" role="row">
+                        <section class="column_items_co">
+                            <p>
+                                Phone Number:
+                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
+                                    size="61" />
+                            </p>
+                        </section>
+                    </section>
+                    <section class="email" id="inputs" role="row">
+                        <section class="column_items_co">
+                            <p>
+                                Email:
+                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
+                                    size="61" />
+                            </p>
+                        </section>
+                    </section>
                 </section>
-                <section class="phone">
-                    <p>Phone Number:</p>
-                </section>
-                <section class="email">
-                    <p>Email:</p>
-                </section>
-            </section>
-            <section class="payment">
-                <h2>Payment Method</h2>
-                <section class="credit-drop">
-                    <button class="dropbtn"><strong>+</strong> Credit Card</button>
-                    <section class="drop-content">
-                        <p> Jus kiddin' Add whateverz you want : &#41;</p>
-                        <input type="text" id="name" name="name" required minlength="16" maxlength="50" size="61" />
+                <section class="payment" id="inputs">
+                    <section class="column_items_co">
+                        <p>Payment Method</p>
+                    </section>
+                    <section class="credit_drop">
+                        <button class="credit_text">
+                            <strong>+</strong>
+                            Credit Card
+                        </button>
+                        <section class="credit_drop_down">
+                            <p> Credit:
+                                <br><input type="text" id="name" name="name" required minlength="16" maxlength="50"
+                                    size="61" />
+                            </p>
+                        </section>
                     </section>
                 </section>
             </section>
-            <section id="order-deets">
-                <h2 id="Underlien">Order Details</h2>
+            <section id="order_co">
+                <h2 id="order_co_text">Cart</h2>
                 <hr>
-                <section class="items">
+                <section class="items_cart_co">
                     <h3>Food Item 1 Price</h3>
                     <h3>Food Item 2 Price</h3>
                     <h3>Total Price</h3>
@@ -64,7 +101,7 @@
             </section>
         </footer>
     </main>
-    
+
 </body>
 
 </html>

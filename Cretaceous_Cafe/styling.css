@@ -85,9 +85,6 @@ img {
     color: rgb(250, 252, 242);
 }
 
-/* I was here :3 */
-/*Kilroy is that you?*/
-
 /*Homepage*/
 .home_page_title {
     display: flex;
@@ -355,6 +352,8 @@ img {
     background:  rgb(31,108,61);
 }
 
+
+
 .menu_page_title {
     display: flex;
     align-items: flex-start;
@@ -406,10 +405,16 @@ img {
     transform: translateX(5px);
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .money {
     max-width: 33%;
     width: 20%;
-transform: translateX(-5rem);
+    transform: translateX(-5rem);
 }
 
 #jurassicpay {
@@ -592,36 +597,30 @@ transform: translateX(-5rem);
     margin: 2%;
 }
 
-#custhead {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-    margin: 2%;
-    background: rgb(161, 165, 141);
-    border-radius: 3px;
-    width: 95%;
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-}
-
 .info {
     display: flex;
     flex-direction: column;
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(161, 165, 141);
-    border-radius: 30px;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    width: 95%;
+    align-items: center;
     width: 50%;
-    align-items: flex-start;
 }
 
+#customer_info {
+    font-size: 4rem;
+}
+
+#inputs {
+    margin: 1%;
+}
+
+.column_items_co {
+    font-size: 3rem;
+}
 
 .payment {
     display: flex;
@@ -629,31 +628,16 @@ transform: translateX(-5rem);
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(161, 165, 141);
-    border-radius: 30px;
     width: 50%;
+    text-align: center;
 }
 
-
-#order-deets {
-    display: flex;
-    background: rgb(161, 165, 141);
-    flex-direction: column;
-    flex-flow: column wrap; 
-    justify-content: flex-end;
-    align-content: stretch;
-    font-size: x-large;
-    margin: 2%;
-    border-radius: 30px;
-    width: 42%;
-    align-items: flex-start;
-}
-
-#underlien {
+/*credit*/
+#credit_drop {
     border-bottom-style: solid;
 }
 
-.dropbtn {
+.credit_text {
     background-color: #BE9D4D;
     color: black;
     padding: 2px;
@@ -661,12 +645,12 @@ transform: translateX(-5rem);
     border: none;
 }
 
-.credit-drop {
+.credit_text {
     display: inline block;
     position: relative;
 }
 
-.drop-content {
+.credit_drop_down {
     display: none;
     position: absolute;
     background-color: rgb(217, 217, 217);
@@ -675,27 +659,39 @@ transform: translateX(-5rem);
     z-index: 1;
 }
 
-.drop-content p {
+.credit_drop_down p {
     color: black;
     padding: 12px 16px;
-    text-decoration: overline;
     display: block;
 }
 
-.drop-content p:hover {
+.credit_drop_down p:hover {
     background-color: aquamarine;
 }
 
-.credit-drop:hover .drop-content {
+.credit_drop:hover .credit_drop_down {
     display: block;
 }
 
-.credit-drop:hover .dropbtn {
+.credit_drop:hover .credit_text {
     background-color: #BE9D4D;
 }
+/*credit end*/
 
-#line {
-    border-bottom: 1px solid #888;
+#order_co {
+    font-size: x-large;
+    height: auto;
+    margin: 2%;
+    width: 50%;
+    background: rgb(49,110,53);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    /*insert car here*/
+}
+
+#order_co_text {
+    font-size: 4rem;
 }
 /*checkout end*/
 
@@ -708,31 +704,24 @@ transform: translateX(-5rem);
     height: 10rem;
     font-size: 5rem;
     color: rgb(250, 252, 242);
-    background: rgb(161, 165, 141);
-    
+    background: rgb(31,108,61);
     border-radius: 15px;
-    margin: 2%;
 }
 
 .order {
+    width: 50%;
+    margin: 2%;
+    background: rgb(49,110,53);
+    border-radius: 30px;
+    height: min-content;
     display: flex;
     flex-direction: column;
     flex-flow: column;
     font-size: x-large;
-    margin: 2%;
-    background: rgb(217, 217, 217);
-    border-radius: 30px;
-    width: 45%;
-    height: min-content;
 }
 
 .order_title {
     background-color: rgb(49,110,53);
-}
-
-.order_icon {
-    width: 100%;
-    height: auto;
 }
 
 .pick_up {
@@ -745,60 +734,6 @@ transform: translateX(-5rem);
     margin: 2rem;
 }
 
-.C-specials {
-    display:flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    margin: 1%;
-    font-size: x-large;
-    background:rgb(49,110,53);
-    border-radius: 15px;
-    width: 75rem;
-}
-
-.cake_special {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-}
-
-#cake-title {
-    margin-right: 5rem;
-}
-
-.salmon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-}
-
-#salm-title {
-    margin-right: 5rem;
-}
-
-.dinosaur_meat {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 30px;
-}
-
-#dino-title {
-    margin-right: 5rem;
-}
-
-.seabass {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-}
-
-#seab-title {
-    margin-right: 2rem;
-}
 /*cart end*/
 
 .pages {
