@@ -425,6 +425,13 @@ a:-webkit-any-link {
     justify-self: flex-end;
     align-self: flex-end;
 }
+
+#price {
+    /*display:flex;
+    align-items: flex-end;
+    justify-content: space-between;*/
+    transform: translateX(-210px);
+}
 /*menu end*/
 
 /*reservation*/
