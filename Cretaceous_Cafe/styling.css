@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -50,10 +52,10 @@ img {
     text-align: center;
     font-size: 5rem;
     /*color: rgb(250, 252, 242);*/
-    padding: 3%;
+    padding: 1.2rem;
     background: rgb(49,110,53);
     border-radius: 15px;
-    margin: 4%;
+    /*margin: 4%;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,6 +64,7 @@ img {
 [role="textbox"] {
     color: rgb(250, 252, 242);
     font-size: 2rem;
+    transform: translateX(3rem);
 }
 
 [role="doc-subtitle"] {
@@ -466,8 +469,11 @@ a:-webkit-any-link {
     flex-direction: row;
     flex-flow: row;
     font-size: xx-large;
-    border-bottom: solid;
-    border-color: black;
+    border-radius: 10em;
+    border: ridge;
+    border-style: groove;
+    border-color: orange;
+    border-width: 10px;
 }
 
 #logo_img{
