@@ -64,7 +64,7 @@ img {
 [role="textbox"] {
     color: rgb(250, 252, 242);
     font-size: 2rem;
-    transform: translateX(3rem);
+    /*transform: translateX(3rem);*/
 }
 
 [role="doc-subtitle"] {
@@ -188,6 +188,13 @@ img {
 
 #people_img {
     margin: 2%;
+}
+
+#home-cart {
+    max-width: 33%;
+    width: 500%;
+    scale: 5;
+    transform: translateX(5px);
 }
 /*homepage end*/
 
@@ -385,7 +392,7 @@ img {
     padding: 1%;
     background: rgb(49,110,53);
     border-radius: 15px;
-    height: 50rem;
+    height: 54rem;
 }
 
 #menu_item_img {
@@ -417,7 +424,7 @@ a:-webkit-any-link {
 .money {
     max-width: 33%;
     width: 20%;
-    transform: translateX(-5rem);
+    transform: translateX(7rem);
 }
 
 #jurassicpay {
@@ -430,7 +437,7 @@ a:-webkit-any-link {
     /*display:flex;
     align-items: flex-end;
     justify-content: space-between;*/
-    transform: translateX(-210px);
+    transform: translateX(10px);
 }
 /*menu end*/
 
@@ -600,7 +607,6 @@ a:-webkit-any-link {
     font-size: xx-large;
     align-items: center;
     justify-content: flex-start;
-    /*center it l8r*/
     height: 10rem;
     font-size: 5rem;
     color: rgb(217, 217, 217);
@@ -610,101 +616,100 @@ a:-webkit-any-link {
     margin: 2%;
 }
 
-.info {
+.link_co {
+    color: rgb(250, 252, 242);
+}
+
+.row_co {
+    display: -ms-flexbox; 
     display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-    margin: 2%;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-    width: 95%;
-    align-items: center;
-    width: 50%;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 -16px;
 }
 
-#customer_info {
-    font-size: 4rem;
+.container_co_25 {
+    -ms-flex: 25%; 
+    flex: 25%;
 }
 
-#inputs {
+.content_head_co {
+    -ms-flex: 50%; 
+    flex: 50%;
+}
+
+.container_co_75 {
+    -ms-flex: 75%; 
+    flex: 75%;
+}
+
+.container_co_25,
+.content_head_co,
+.container_co_75 {
+    padding: 0 16px;
+}
+
+.container {
+    color: rgb(250, 252, 242);
     margin: 1%;
+    background-color: rgb(31,108,61);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
 }
 
-.column_items_co {
-    font-size: 3rem;
+input[type=text] {
+    color: rgb(250, 252, 242);
+    width: 94%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
 }
 
-.payment {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-    margin: 2%;
-    width: 50%;
-    text-align: center;
+.price {
+    color: rgb(250, 252, 242)
 }
 
-/*credit*/
-#credit_drop {
-    border-bottom-style: solid;
+label {
+    margin-bottom: 10px;
+    display: block;
 }
 
-.credit_text {
-    background-color: #BE9D4D;
-    color: black;
-    padding: 2px;
-    font-size: 100%;
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.bill_input {
+    background-color: #04AA6D;
+    color: rgb(250, 252, 242);
+    padding: 12px;
+    margin: 10px 0;
     border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
-.credit_text {
-    display: inline block;
-    position: relative;
+.bill_input:hover {
+    background-color: #45a049;
 }
 
-.credit_drop_down {
-    display: none;
-    position: absolute;
-    background-color: rgb(217, 217, 217);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+span.price {
+    float: right;
+    color: rgb(250, 252, 242);
 }
 
-.credit_drop_down p {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-}
-
-.credit_drop_down p:hover {
-    background-color: aquamarine;
-}
-
-.credit_drop:hover .credit_drop_down {
-    display: block;
-}
-
-.credit_drop:hover .credit_text {
-    background-color: #BE9D4D;
-}
-/*credit end*/
-
-#order_co {
-    font-size: x-large;
-    height: auto;
-    margin: 2%;
-    width: 50%;
-    background: rgb(49,110,53);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    /*insert car here*/
-}
-
-#order_co_text {
-    font-size: 4rem;
+@media (max-width: 800px) {
+    .row_co {
+        flex-direction: column-reverse;
+    }
+    .container_co_25 {
+        margin-bottom: 20px;
+    }
 }
 /*checkout end*/
 
@@ -721,18 +726,6 @@ a:-webkit-any-link {
     border-radius: 15px;
 }
 
-.order {
-    width: 50%;
-    margin: 2%;
-    background: rgb(49,110,53);
-    border-radius: 30px;
-    height: min-content;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-}
-
 .order_title {
     background-color: rgb(49,110,53);
 }
@@ -746,6 +739,20 @@ a:-webkit-any-link {
     background-color: #BE9D4D;
     margin: 2rem;
 }
+
+#order_co {
+    font-size: x-large;
+    height: auto;
+    margin: 2%;
+    width: 50%;
+    background: rgb(49,110,53);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    /*insert car here*/ 
+}
+
+
 
 /*cart end*/
 

@@ -19,74 +19,85 @@
                 <h1>Checkout</h1>
             </section>
         </section>
-        <section class="co_content" role="row">
-            <section class="info">
-                <h2 id="customer_info">Customer Info</h2>
-                <section role="row">
-                    <section class="first_name" id="inputs" role="row">
-                        <section class="column_items_co">
-                            <p>
-                                First Name:
-                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
-                                    size="61" />
-                            </p>
+        <section class="co_content_all" role="row">
+            <section class="container_co_75">
+                <section class="container">
+
+                    <section class="row_co">
+                        <section class="content_head_co">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email">
+                            <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city">
+
+                            <section class="row_co">
+                                <section class="content_head_co">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state">
+                                </section>
+                                <section class="content_head_co">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip">
+                                </section>
+                            </section>
                         </section>
-                    </section>
-                    <section class="last name" id="inputs" role="row">
-                        <section class="column_items_co">
-                            <p>
-                                Last Name:
-                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
-                                    size="61" />
-                            </p>
+
+                        <section class="content_head_co">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <section class="icon-container">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-cc-amex"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-discover"></i>
+                            </section>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth">
+
+                            <section class="row_co">
+                                <section class="content_head_co">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear">
+                                </section>
+                                <section class="row_co">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv">
+                                </section>
+                            </section>
                         </section>
+
                     </section>
-                </section>
-                <section role="row">
-                    <section class="phone" id="inputs" role="row">
-                        <section class="column_items_co">
-                            <p>
-                                Phone Number:
-                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
-                                    size="61" />
-                            </p>
-                        </section>
-                    </section>
-                    <section class="email" id="inputs" role="row">
-                        <section class="column_items_co">
-                            <p>
-                                Email:
-                                <input type="text" id="name" name="name" required minlength="16" maxlength="50"
-                                    size="61" />
-                            </p>
-                        </section>
-                    </section>
-                </section>
-                <section class="payment" id="inputs">
-                    <section class="column_items_co">
-                        <p>Payment Method</p>
-                    </section>
-                    <section class="credit_drop">
-                        <button class="credit_text">
-                            <strong>+</strong>
-                            Credit Card
-                        </button>
-                        <section class="credit_drop_down">
-                            <p> Credit:
-                                <br><input type="text" id="name" name="name" required minlength="16" maxlength="50"
-                                    size="61" />
-                            </p>
-                        </section>
-                    </section>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as
+                        billing
+                    </label>
+                    <input type="submit" value="Continue" class="bill_input">
+                    </form>
                 </section>
             </section>
-            <section id="order_co">
-                <h2 id="order_co_text">Cart</h2>
-                <hr>
-                <section class="items_cart_co">
-                    <h3>Food Item 1 Price</h3>
-                    <h3>Food Item 2 Price</h3>
-                    <h3>Total Price</h3>
+            <section class="container_co_25">
+                <section class="container">
+                    <h4>Cart
+                        <span class="price">
+                            <i class="fa fa_shopping_cart"></i>
+                            <b>4</b>
+                        </span>
+                    </h4>
+                    <p><a id="text_link" href="#">Product 1</a> <span class="price">$15</span></p>
+                    <p><a id="text_link" href="#">Product 2</a> <span class="price">$5</span></p>
+                    <p><a id="text_link" href="#">Product 3</a> <span class="price">$8</span></p>
+                    <p><a id="text_link" href="#">Product 4</a> <span class="price">$2</span></p>
+                    <hr>
+                    <p id="text_link">Total <span class="price"><b>$30</b></span></p>
                 </section>
             </section>
         </section>
