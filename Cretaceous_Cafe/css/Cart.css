@@ -23,22 +23,3 @@ body {
     margin: 2%;
 }
 
-.order {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-    margin: 2%;
-    background: rgb(217, 217, 217);
-    border-radius: 30px;
-    width: 50%;
-}
-
-.order_title {
-    background-color: #BE9D4D;
-}
-
-.order_icon {
-    width: 100%;
-    height: auto;
-}
