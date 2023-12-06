@@ -398,13 +398,12 @@ nav, footer {
 }
 
 .product {
-    border: solid 1px black;
+    border-radius: 15px;
     background-color: rgb(49,110,53);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
-    position: relative;
     height: 37rem;
-    width: 33%;margin: 1%;
+    width: 33%; margin: 1%;
 }
 
 .product:hover,
@@ -423,10 +422,19 @@ nav, footer {
     content: "$ ";
 }
 
+.J-pay {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    scale: 40%;
+}
+
 .menuPrice {
     display: inline-block;
     margin-top: 0.5em;
     color: rgb(250, 252, 242);
+    transform: translateX(4rem);
 }
 
 .prodBtn,
@@ -471,7 +479,6 @@ nav, footer {
 
 .cartItem {
     margin: 1%;
-    border: solid 1px black;
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
     display: flex;
@@ -719,10 +726,35 @@ nav>a:hover {
     background: #F70003;
 }
 
+.times {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    color: rgb(250, 252, 242);
+    text-align: center;
+    padding: 1%;
+    margin: 1.6%;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+#time_text {
+    margin: 1%;
+}
+
 .reservation_icon {
     display: flex;
     flex-direction: row;
     flex-flow: row;
+}
+
+button {
+    background-color: #04AA6D;
+    border-radius: 15pt;
+}
+
+button:active {
+    background-color: #04AA6D; 
 }
 
 #reservation_icon_text {
@@ -737,12 +769,10 @@ nav>a:hover {
 }
 
 .button {
-    color: rgb(250, 252, 242);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: rgb(190,157,77);
     border-radius: 15px;
+    color: rgb(250, 252, 242);
+    text-align: center;
 }
 
 /*checkout*/
