@@ -1,6 +1,6 @@
 const
     // set the name of your shop here
-    shopID = 'cretaceouseatShop',
+    shopID = 'cretaceousEats',
     // match the following attributes to the classes on your products 
     productClass = 'product',
     imageClass = 'menuImage',
@@ -21,7 +21,7 @@ if (localStorage.getItem(shopID) === null) {
 let shop = JSON.parse(localStorage.getItem(shopID));
 
 // Define the Product class
-class product {
+class Product {
     constructor(name, desc, price, imgSrc, qty = 1) {
         this.name = name;
         this.desc = desc;
@@ -40,10 +40,10 @@ function addToCart(e) {
     let attributes = ['name', 'desc', 'price', 'imgSrc'];
     // loop through the product attributes and assign them to the array
     for (let node of product) {
-        if (node.className === menuTitle) attributes[0] = node.innerText;
-        if (node.className === menuParagraph) attributes[1] = node.innerText;
-        if (node.className === menuPrice) attributes[2] = parseFloat(node.innerText);
-        if (node.className === menuImage) attributes[3] = node.currentSrc;
+        if (node.className === nameClass) attributes[0] = node.innerText;
+        if (node.className === descClass) attributes[1] = node.innerText;
+        if (node.className === priceClass) attributes[2] = parseFloat(node.innerText);
+        if (node.className === imageClass) attributes[3] = node.currentSrc;
     }
 
     // check if any attributes are undefined
@@ -53,7 +53,7 @@ function addToCart(e) {
     }
     // check if the item is already in the cart
     for (let item of shop.cart) {
-        if (item.name === attributes[1]) {
+        if (item.name === attributes[0]) {
             // increase quantity by 1
             item.qty++;
             // update local storage
@@ -62,6 +62,7 @@ function addToCart(e) {
             updateCartTotals()
             return; 
     }
+}
     // add item to cart
     shop.cart.push(new Product(...attributes));
     // update local storage

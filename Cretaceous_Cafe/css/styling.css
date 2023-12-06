@@ -470,12 +470,14 @@ nav, footer {
 }
 
 .cartItem {
+    margin: 1%;
     border: solid 1px black;
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
     display: flex;
     gap: 1em;
     position: relative;
+    background-color: rgb(49,110,53);
 }
 
 .cartItem img {
