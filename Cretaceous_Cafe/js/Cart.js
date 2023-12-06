@@ -1,78 +1,13 @@
-const daysTag = document.querySelector(".days"),
-currentDate = document.querySelector(".current-date"),
-prevNextIcon = document.querySelectorAll(".icons span");
-
-
-let date = new Date(),
-currYear = date.getFullYear(),
-currMonth = date.getMonth();
-
-
-const months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"];
-
-
-const renderCalendar = () => {
-    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),     lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),     lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),     lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();    
-let liTag = "";
-
-
-    for (let i = firstDayofMonth; i > 0; i--) {         liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
-    }
-
-
-    for (let i = 1; i <= lastDateofMonth; i++) {         
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth()
-                     && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday}">${i}</li>`;
-    }
-
-
-    for (let i = lastDayofMonth; i < 6; i++) {
-        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
-    }
-    currentDate.innerText = `${months[currMonth]} ${currYear}`;     daysTag.innerHTML = liTag;
-}
-renderCalendar();
-
-
-prevNextIcon.forEach(icon => { 
-    icon.addEventListener("click", () => { 
-
-
-        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
-
-
-        if(currMonth < 0 || currMonth > 11) { 
-
-
-            date = new Date(currYear, currMonth, new Date().getDate());
-            currYear = date.getFullYear();
-            currMonth = date.getMonth(); 
-        } else {
-            date = new Date(); 
-        }
-        renderCalendar(); 
-    });
-});
-
-
-
-
-
-
-
-
 const
     // set the name of your shop here
-    shopID = 'cretaceousEats',
-    // match the following attributes to the classes on your products
-    productClass = 'menu_item',
-    imageClass = 'menu_item_image',
-    nameClass = 'menu_item_title',
-    descClass = 'menu_item_paragraph',
-    priceClass = 'money',
-    // match the following attributes to your cart total elements
+    shopID = 'cretaceouseatShop',
+    // match the following attributes to the classes on your products 
+    productClass = 'product',
+    imageClass = 'menuImage',
+    nameClass = 'menuTitle',
+    descClass = 'menuParagraph',
+    priceClass = 'menuPrice',
+    // match the following attributes to your cart total elements 
     cartTotalID = 'cartTotal',
     cartItemCountID = 'cartItemCount';
 
@@ -83,10 +18,10 @@ if (localStorage.getItem(shopID) === null) {
 }
 
 //initialize the shop object
-let shop = JSON.parse(localStorage.getItem(cretaceousEats));
+let shop = JSON.parse(localStorage.getItem(shopID));
 
 // Define the Product class
-class menu_item {
+class product {
     constructor(name, desc, price, imgSrc, qty = 1) {
         this.name = name;
         this.desc = desc;
@@ -105,28 +40,27 @@ function addToCart(e) {
     let attributes = ['name', 'desc', 'price', 'imgSrc'];
     // loop through the product attributes and assign them to the array
     for (let node of product) {
-        if (node.className === menu_item_title) attributes[0] = node.innerText;
-        if (node.className === menu_item_paragraph) attributes[1] = node.innerText;
-        if (node.className === money) attributes[2] = parseFloat(node.innerText);
-        if (node.className === menu_item_image) attributes[3] = node.currentSrc;
+        if (node.className === menuTitle) attributes[0] = node.innerText;
+        if (node.className === menuParagraph) attributes[1] = node.innerText;
+        if (node.className === menuPrice) attributes[2] = parseFloat(node.innerText);
+        if (node.className === menuImage) attributes[3] = node.currentSrc;
     }
 
     // check if any attributes are undefined
     if (attributes.includes(undefined)) {
         console.log("Error: One or more attributes are undefined, check your class names");
-        return; // exit function
+        return; 
     }
     // check if the item is already in the cart
     for (let item of shop.cart) {
-        if (item.name === attributes[0]) {
+        if (item.name === attributes[1]) {
             // increase quantity by 1
             item.qty++;
             // update local storage
             localStorage.setItem(shopID, JSON.stringify(shop));
             console.log("Item already in cart, increased quantity by 1");
             updateCartTotals()
-            return; // exit function
-        }
+            return; 
     }
     // add item to cart
     shop.cart.push(new Product(...attributes));

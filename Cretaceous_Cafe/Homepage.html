@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styling.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="/Cretaceous_Cafe/js/Calendar.js" defer></script>
+    <script src="/Cretaceous_Cafe/js/Cart.js" defer></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link href='https://fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
@@ -26,60 +27,48 @@
                     Dishs
                     <br>"Spared no expense!"</a></h2>
             <section class="specials" role="rowgroup">
+                <h2 id="specials_title" role="rowheader">Specials</h2>
                 <section role="row">
-                    <section class="menu_item" role="group">
-                        <img id="menu_item_img"
-                            src="images/menu/Firefly seared brown steak with herbs and spices; cooking beef fillet 83841.jpg"
-                            alt="Image of a dinosaur steak.">
-                        <h3 id="menu_item_title">Dinosaur Meat</h3>
-                        <p id="menu_item_paragraph">
-                            Meat from the Expeditions section of the park.
+                    <div class="product">
+                        <img src="/Cretaceous_Cafe/Images/menu/dino steak2.jpg" alt="Image of a dinosaur steak"
+                            class="menu_item_image">
+                        <h3 class="menu_item_title">
+                            Dinosaur Meat
+                        </h3>
+                        <p class="menu_item_paragraph">
+                            Real dinosaur meat! Meat from the Expeditions section of the park.
                         </p>
-                        <section class="menu_item_currency" role="row">
-                            <a href="Cart.html"><img class="money" id="home-cart" role="button"
-                                    src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
-                                    alt="Image of a clickable cart, that takes you to the cart page.."></a>
-                            <p role="row"><img class="money" id="jurassicpay" src="Images/JurassicPAY Logo.png"
-                                    alt="icon for money">
-                            </p>
-                        </section>
-                    </section>
-                    <section class="menu_item" role="group">
-                        <img id="menu_item_img"
-                            src="images/menu/Firefly pan seared chilean sea bass with brown sauce 83841.jpg"
-                            alt="Image of seabass.">
-                        <h3 id="menu_item_title">Chilean Sea Bass</h3>
-                        <p id="menu_item_paragraph">
-                            It’s the Chef's favorite dish.
+                        <span class="menu_item_price">1.25</span><a href="/Cretaceous_Cafe/Images/menu/eoughabooga.png"
+                            class="add_to_cart prodBtn">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="/Cretaceous_Cafe/Images/menu/sea bass.jpg" alt="image of seabass"
+                            class="menu_item_image">
+                        <h3 class="menu_item_title">
+                            Chilean Sea Bass
+                        </h3>
+                        <p class="menu_item_paragraph">
+                            It tasts similar to cod, but has a smooth tast, our most iconic dish.
                         </p>
-                        <section class="menu_item_currency" role="row">
-                            <a href="Cart.html"><img class="money" id="home-cart" role="button"
-                                    src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
-                                    alt="Image of a clickable cart, that takes you to the cart page.."></a>
-                            <p role="row"><img class="money" id="jurassicpay" src="Images/JurassicPAY Logo.png"
-                                    alt="icon for money">
-
-                            </p>
-                        </section>
-                    </section>
-                    <section class="menu_item" role="group">
-                        <img id="menu_item_img"
-                            src="images/menu/Firefly A grilled salmon seasoned with dry mustard powder; recipe book photograph 14566.jpg"
-                            alt="Image of grilled salmon.">
-                        <h3 id="menu_item_title">Piscivore</h3>
-                        <p id="menu_item_paragraph">
-                            A grilled salmon, with dry mustard seasoning.
+                        <span class="menu_item_price">1.25</span><a href="/Cretaceous_Cafe/Images/menu/eoughabooga.png"
+                            class="add_to_cart prodBtn">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product">
+                        <img src="/Cretaceous_Cafe/Images/menu/grilled salmon.jpg" alt="image of grilled salmon"
+                            class="menu_item_image">
+                        <h3 class="menu_item_title">
+                            Piscivore
+                        </h3>
+                        <p class="menu_item_paragraph">
+                            A grilled salmon, seasoned with dry mustard powder. Loved by the couples, be enough to feed
+                            you both.
                         </p>
-                        <section class="menu_item_currency" role="row">
-                            <a href="Cart.html"><img class="money" id="home-cart" role="button"
-                                    src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
-                                    alt="Image of a clickable cart, that takes you to the cart page.."></a>
-                            <p role="row"><img class="money" id="jurassicpay" src="Images/JurassicPAY Logo.png"
-                                    alt="icon for money">
-
-                            </p>
-                        </section>
-                    </section>
+                        <span class="menu_item_price">1.25</span><a href="/Cretaceous_Cafe/Images/menu/eoughabooga.png"
+                            class="add_to_cart prodBtn">Add to
+                            Cart</a>
+                    </div>
                 </section>
             </section>
         </section>

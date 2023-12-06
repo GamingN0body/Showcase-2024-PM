@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url(https://fonts.googleapis.com/css2?family=Iceland&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&family=Iceland&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+main {
+    background-image: url(/Cretaceous_Cafe/Images/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[role="menu"] {
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    margin: 0%;
+    font-family: 'Irish Grover';
+    color: rgb(250, 252, 242);
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+    color: rgb(250, 252, 242);
+}
+
+img {
+    max-width: 100%;
+    width: 30%;
+    margin: 1%;
+    border-radius: 2em;
+}
+
+.featured_title {
+    background: rgb(190,157,77);
+}
+
+[role="banner"] {
+    text-align: center;
+    font-size: 5rem;
+    /*color: rgb(250, 252, 242);*/
+    padding: 1.2rem;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    /*margin: 4%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[role="textbox"] {
+    color: rgb(250, 252, 242);
+    font-size: 2rem;
+    /*transform: translateX(3rem);*/
+}
+
+[role="doc-subtitle"] {
+    text-align: center;
+    font-size: 3rem;
+}
+
+[role="row"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text_title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#text_link:link,
+#text_link:visited {
+    color: rgb(250, 252, 242);
+}
+
+/*Homepage*/
+.home_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Cretaceous_Cafe/Images/home/home_steak.jpg);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+}
+
+.customer_favorite {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.featured_hp {
+    max-width: 30%;
+    padding: 1%;
+    margin: 3rem;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+#featured_text {
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    color: rgb(71,53,44);
+    border-radius: 15px;
+}
+
+#featured_img {
+    width: 100%;
+}
+
+.order_hp {
+    height: 27rem;
+    padding: 1%;
+    margin: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    font-size: 3rem;
+    width: 50%;
+}
+
+#order_title_hp {
+    color: rgb(250, 252, 242);
+    font-size: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order_text_hp {
+    font-size: 3rem;
+    padding: 1%;
+    font-size: 2rem;
+    background: rgb(31,108,61);
+    color: rgb(250, 252, 242);
+    border-radius: 15px;
+}
+
+#button {
+    padding: 1%;
+    font-size: 2rem;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*we need to figure out how to contain the background around the image, no extra room.*/    
+}
+
+.reviews_hp {
+    padding: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+.reviews_title_hp {
+    background: rgb(190,157,77);
+    border-radius: 15px;
+}
+
+#review_paragraph {
+    font-size:2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#people_img {
+    margin: 2%;
+}
+
+#home-cart {
+    max-width: 33%;
+    width: 500%;
+    scale: 5;
+    transform: translateX(5px);
+}
+/*homepage end*/
+
+/*about page*/
+.about_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Cretaceous_Cafe/Images/about/volcano.jpg);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+}
+
+#title_text {
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background: rgb(63.1%, 64.7%, 55.33%);
+    border-radius: 15px;
+    margin: 2%;
+}
+
+.about {
+    padding: 1%;
+    background: rgb(31,108,61);
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: row;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievements_title, .achievements_paragraph {
+    margin: 1%;
+}
+
+.achievenments {
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    margin: 2%;
+    padding: 1%;
+}
+
+#img_logo {
+    width: 60rem;
+}
+
+.employees_ {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.employees_text {
+    margin: 2%;
+    padding: 1%;
+    background: rgb(31,108,61);
+    border-radius: 15px;
+    width: 35rem;
+    height: 35rem;
+}
+
+.employees_group {
+    padding: 1%;
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+#employee_img{
+    width: 35rem;
+    height: 30rem;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+} 
+
+.employees_paragraph {
+    margin: 2%;
+    padding: 1%;
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    width: 35rem;
+}
+/*about page end*/
+
+/*review page*/
+#review {
+    margin-top: 3%;
+    padding: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px
+}
+
+.review_title {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.review_group {
+    display: flex;
+}
+
+#review_text {
+    font-size: 4rem;
+    margin: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+}
+
+#review_image {
+    max-width: 20%;
+    width: 100%;
+    padding: 1%;
+}
+/*review page end*/
+
+/*careers*/
+.careers_page_title {
+    background-image: url(/Cretaceous_Cafe/Images/backgorund/logo_vine.jpg);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#title_text {
+    font-size: 7rem;
+}
+
+#sub_title_text {
+    font-size: 4rem;
+}
+
+.careers{
+    display: flex;
+}
+
+#careers_paragraph{
+    font-size:3rem;
+    padding: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    margin: 0%;
+}
+
+#careers_img{
+    width: 25rem;
+    margin: 1%;
+}
+/*careers end*/
+
+/*menu*/
+nav, footer {
+    color: white;
+    text-align: right;
+    background: black;
+    padding: 2rem;
+}
+
+[role="rowheader"] {
+    text-align: center;
+    font-size: 4rem;
+    background:  rgb(31,108,61);
+}
+
+.menu_page_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("/Cretaceous_Cafe/Images/menu/banner\ menu.jpg");
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    height: 50rem;
+}
+
+.menu_page {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 3%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_item_bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+.product {
+    border: solid 1px black;
+    background-color: rgb(49,110,53);
+    padding: 0.5rem;
+    transition: box-shadow 500ms ease;
+    position: relative;
+    height: 30rem;
+    width: 33%;margin: 1%;
+}
+
+.product:hover,
+.cartItem:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menuImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.menuPrice::before {
+    content: "$ ";
+}
+
+.menuPrice {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: rgb(250, 252, 242);
+}
+
+.prodBtn,
+.removeBtn,
+#emptyCart {
+    display: block;
+    float: right;
+    background-color: dodgerblue;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 0.5em; 
+    transition: background-color 500ms ease;  
+}
+
+.prodBtn:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.removeBtn,
+#emptyCart {
+    background-color: black;
+}
+.removeBtn:hover,
+#emptyCart:hover {
+    background-color: red;
+}
+
+#emptyCart {
+    margin-top: 0.5em;
+}
+
+#cart {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 25vh;
+    gap: 1em;
+    margin-bottom: 2rem;
+}
+
+.cartItem {
+    border: solid 1px black;
+    padding: 0.5rem;
+    transition: box-shadow 500ms ease;
+    display: flex;
+    gap: 1em;
+    position: relative;
+}
+
+.cartItem img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    flex-shrink: 1;
+}
+
+.cartItem .cartItemInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartItem .cartItemPricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTotal {
+    text-align: right;
+}
+
+nav>a {
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    margin-left: 1rem;
+}
+
+nav>a:hover {
+    color: yellow;
+    background-color: rgb(26, 118, 209);
+}
+
+#cartItemCount::before {
+    content: " (";
+}
+
+#cartItemCount::after {
+    content: ")";
+}
+
+#price {
+    /*display:flex;
+    align-items: flex-end;
+    justify-content: space-between;*/
+    transform: translateX(10px);
+}
+/*menu end*/
+
+/*cart*/
+.title {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    background: rgb(31,108,61);
+    border-radius: 15px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(31,108,61);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.order_title {
+    background-color: #BE9D4D;
+}
+
+.order_icon {
+    width: 100%;
+    height: auto;
+}
+
+.order_title {
+    background-color: rgb(49,110,53);
+}
+
+.pick_up {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+.dine {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+/*cart end*/
+
+/*reservation*/
+.title {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    padding: 1%;
+    background:  rgb(49,110,53);
+    border-radius: 15px;
+    margin: 0%;
+}
+
+#week_day {
+    border-bottom: solid;
+    border-color: black;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+}
+
+.business_logo {
+    display:flex;
+    flex-direction: row;
+    flex-flow: row;
+    font-size: xx-large;
+    border-radius: 10em;
+    border: ridge;
+    border-style: groove;
+    border-color: orange;
+    border-width: 10px;
+}
+
+#logo_img{
+    width: 15rem;
+}
+
+#smaller_text {
+    margin: 0%;
+    font-size: 3rem;
+}
+
+.hours {
+    text-align: center;
+    font-size: larger;
+}
+
+#menu_item_paragraph_r {
+    font-size: large;
+}
+
+#cart_r {
+    width: 25%;
+}
+
+.reservations_here {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column;
+    margin: 1%;
+    font-size: x-large;
+    background:rgb(49,110,53);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.icons span:last-child{
+  margin-right: -10px;
+}
+
+.icons span:hover{
+  background: #F70003;
+}
+
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar li{
+  color: #D9DECC;
+  width: 13%;
+  font-size: 1.07rem;
+}
+
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 0.4rem;
+}
+
+.days li.inactive{
+  color: rgb(113,118,104);
+}
+
+.days li.active{
+ color: rgb(250,252,242);
+}
+
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 2rem;
+  width: 2rem;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li:not(.active):hover::before{
+    background: #F70003;
+}
+
+.reservation_icon {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
+
+#reservation_icon_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-25px);
+}
+
+#reservation_icon_img {
+    width: 20rem;
+}
+
+.button {
+    color: rgb(250, 252, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(190,157,77);
+    border-radius: 15px;
+}
+/*checkout*/
+.title {
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(217, 217, 217);
+    padding: 1%;
+    background: rgb(161, 165, 141);
+    border-radius: 15px;
+    margin: 2%;
+}
+
+.link_co {
+    color: rgb(250, 252, 242);
+}
+
+.row_co {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.container_co_25 {
+    -ms-flex: 25%; 
+    flex: 25%;
+}
+
+.content_head_co {
+    -ms-flex: 50%; 
+    flex: 50%;
+}
+
+.container_co_75 {
+    -ms-flex: 75%; 
+    flex: 75%;
+}
+
+.container_co_25,
+.content_head_co,
+.container_co_75 {
+    padding: 0 16px;
+}
+
+.container {
+    color: rgb(250, 252, 242);
+    margin: 1%;
+    background-color: rgb(31,108,61);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    color: rgb(250, 252, 242);
+    width: 94%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.price {
+    color: rgb(250, 252, 242)
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.bill_input {
+    background-color: #04AA6D;
+    color: rgb(250, 252, 242);
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.bill_input:hover {
+    background-color: #45a049;
+}
+
+span.price {
+    float: right;
+    color: rgb(250, 252, 242);
+}
+/*checkout end*/
+
+/*extra*/
+#menu_item_img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#menu_item_title {
+    font-size: 2rem;
+}
+
+#menu_item_paragraph {
+    font-size: 1rem;
+}
+
+/*extra end*/
+
+.pages {
+    margin: 0%;
+    font-size: 1.3rem;
+    text-indent: 30px;
+    background: rgb(250, 252, 242);
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 640px){
+    #products {
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+
+    .row_co {
+        flex-direction: column-reverse;
+    }
+
+    .container_co_25 {
+        margin-bottom: 20px;
+    }
+}

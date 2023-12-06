@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    background-image: url(Images/main-bg.jpg);
+    background-image: url(/Cretaceous_Cafe/Images/main-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -93,7 +93,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: url(Images/home/home_steak.jpg);
+    background-image: url(/Cretaceous_Cafe/Images/home/home_steak.jpg);
     background-size: cover;
     background-position-y:center;
     background-position-x:center;
@@ -203,7 +203,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: url(Images/about/volcano.jpg);
+    background-image: url(/Cretaceous_Cafe/Images/about/volcano.jpg);
     background-size: cover;
     background-position-y:center;
     background-position-x:center;
@@ -319,7 +319,7 @@ img {
 
 /*careers*/
 .careers_page_title {
-    background-image: url(Images/backgorund/logo_vine.jpg);
+    background-image: url(/Cretaceous_Cafe/Images/backgorund/logo_vine.jpg);
     background-size: cover;
     background-position-y:center;
     background-position-x:center;
@@ -356,6 +356,13 @@ img {
 /*careers end*/
 
 /*menu*/
+nav, footer {
+    color: white;
+    text-align: right;
+    background: black;
+    padding: 2rem;
+}
+
 [role="rowheader"] {
     text-align: center;
     font-size: 4rem;
@@ -366,7 +373,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: url("Images/menu/Firefly jurassic jungle landscape with city-restaurant within the forest of cradle mountain 9370.jpg");
+    background-image: url("/Cretaceous_Cafe/Images/menu/banner\ menu.jpg");
     background-size: cover;
     background-position-y:center;
     background-position-x:center;
@@ -397,8 +404,7 @@ img {
     transition: box-shadow 500ms ease;
     position: relative;
     height: 30rem;
-    width: 33%;
-    margin: 1%;
+    width: 33%;margin: 1%;
 }
 
 .product:hover,
@@ -406,23 +412,21 @@ img {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.menu_item_image {
+.menuImage {
     width: 100%;
     height: auto;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
 
-.menu_item_price::before {
+.menuPrice::before {
     content: "$ ";
 }
 
-.menu_item_price {
+.menuPrice {
     display: inline-block;
     margin-top: 0.5em;
-}
-
-.menu_item_paragraph {
+    color: rgb(250, 252, 242);
 }
 
 .prodBtn,
@@ -434,8 +438,8 @@ img {
     color: white;
     padding: 1em;
     text-decoration: none;
-    border-radius: 0.5em;
-    transition: background-color 500ms ease;    
+    border-radius: 0.5em; 
+    transition: background-color 500ms ease;  
 }
 
 .prodBtn:hover {
@@ -467,7 +471,6 @@ img {
 
 .cartItem {
     border: solid 1px black;
-    background-color: white;
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
     display: flex;
@@ -492,7 +495,6 @@ img {
 .cartItem .cartItemPricing {
     display: flex;
     justify-content: space-between;
-
 }
 
 .cartTotal {
@@ -524,74 +526,6 @@ nav>a:hover {
     content: ")";
 }
 
-.menu_item {
-    margin: 3%;
-    padding: 1%;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-    height: 54rem;
-}
-
-/*menu end
-
-
-#menu_item_img {
-    max-width: 100%;
-    width: 100%;
-}
-
-#menu_item_title {
-    font-size: 2rem;
-}
-
-#menu_item_paragraph {
-    font-size: 1.5rem;
-}
-
-#cart-mone {
-    max-width: 33%;
-    width: 500%;
-    scale: 7.4;
-    transform: translateX(5px);
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.money {
-    max-width: 33%;
-    width: 20%;
-    transform: translateX(7rem);
-}
-
-#jurassicpay {
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
-}
-
-
-                <section class="menu_item" role="group">
-                    <img id="menu_item_img"
-                        src="images/menu/Firefly seared brown steak with herbs and spices; cooking beef fillet 83841.jpg"
-                        alt="Image of a dinosaur steak.">
-                    <h3 id="menu_item_title">Dinosaur Meat</h3>
-                    <p id="menu_item_paragraph">
-                        Meat from the Expeditions section of the park.
-                    </p>
-                    <section class="menu_item_currency" role="row">
-                        <a href="#" class="addToCart prodBtn"><img class="money" id="cart-mone" role="button"
-                                src="/Cretaceous_Cafe/Images/menu/Meaning-removebg-preview (1).png"
-                                alt="Image of a clickable cart, that takes you to the cart page.."></a>
-                        <p role="row"><img class="money" id="jurassicpay" src="Images/JurassicPAY Logo.png"
-                                alt="icon for money">
-                        </p>
-                    </section>
-                </section>*/
-
 #price {
     /*display:flex;
     align-items: flex-end;
@@ -599,6 +533,54 @@ a:-webkit-any-link {
     transform: translateX(10px);
 }
 /*menu end*/
+
+/*cart*/
+.title {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    font-size: 5rem;
+    color: rgb(250, 252, 242);
+    background: rgb(31,108,61);
+    border-radius: 15px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: x-large;
+    margin: 2%;
+    background: rgb(31,108,61);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.order_title {
+    background-color: #BE9D4D;
+}
+
+.order_icon {
+    width: 100%;
+    height: auto;
+}
+
+.order_title {
+    background-color: rgb(49,110,53);
+}
+
+.pick_up {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+
+.dine {
+    background-color: #BE9D4D;
+    margin: 2rem;
+}
+/*cart end*/
 
 /*reservation*/
 .title {
@@ -635,6 +617,7 @@ a:-webkit-any-link {
     background: rgb(49,110,53);
     border-radius: 15px;
     width: 50%;
+    height: 50%;
 }
 
 .business_logo {
@@ -759,7 +742,6 @@ a:-webkit-any-link {
     background: rgb(190,157,77);
     border-radius: 15px;
 }
-
 /*checkout*/
 .title {
     display: flex;
@@ -861,83 +843,27 @@ span.price {
     float: right;
     color: rgb(250, 252, 242);
 }
-
-/*
-@media (max-width: 800px) {
-    .row_co {
-        flex-direction: column-reverse;
-    }
-    .container_co_25 {
-        margin-bottom: 20px;
-    }
-}
-*/
 /*checkout end*/
 
-/*cart*/
-.title {
-    display: flex;
-    font-size: x-large;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
-    font-size: 5rem;
-    color: rgb(250, 252, 242);
-    background: rgb(31,108,61);
-    border-radius: 15px;
-}
-
-.order {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    font-size: x-large;
-    margin: 2%;
-    background: rgb(31,108,61);
-    border-radius: 15px;
-    width: 50%;
-}
-
-.order_title {
-    background-color: #BE9D4D;
-}
-
-.order_icon {
+/*extra*/
+#menu_item_img {
+    max-width: 100%;
     width: 100%;
-    height: auto;
 }
 
-.order_title {
-    background-color: rgb(49,110,53);
+#menu_item_title {
+    font-size: 2rem;
 }
 
-.pick_up {
-    background-color: #BE9D4D;
-    margin: 2rem;
+#menu_item_paragraph {
+    font-size: 1rem;
 }
 
-.dine {
-    background-color: #BE9D4D;
-    margin: 2rem;
-}
-
-#order_co {
-    font-size: x-large;
-    height: auto;
-    margin: 2%;
-    width: 50%;
-    background: rgb(49,110,53);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    /*insert car here*/ 
-}
-/*cart end*/
+/*extra end*/
 
 .pages {
     margin: 0%;
     font-size: 1.3rem;
-    height: 4rem;
     text-indent: 30px;
     background: rgb(250, 252, 242);
     position: sticky;
@@ -950,5 +876,13 @@ span.price {
     #products {
         grid-template-columns: 1fr;
         padding: 1em;
+    }
+
+    .row_co {
+        flex-direction: column-reverse;
+    }
+
+    .container_co_25 {
+        margin-bottom: 20px;
     }
 }
