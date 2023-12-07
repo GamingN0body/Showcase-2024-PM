@@ -419,9 +419,9 @@ nav, footer {
     object-fit: cover;
 }
 
-/*.menuPrice::before {
-    content: "$ ";
-}*/
+.menuPrice::before {
+    content: (url="/Cretaceous_Cafe/Images/menu/sea bass.jpg");
+}
 
 .price-cart {
     display: flex;
@@ -737,9 +737,8 @@ nav>a:hover {
     text-align: center;
     padding: 1%;
     margin: 1.6%;
-    display: flex;
-    flex-direction: row;
-    width: 25%;
+    width: auto;
+    text-align: center;
 }
 
 #time_text {
@@ -884,10 +883,10 @@ span.price {
 .cart_title {
     background-color: #45a049;
     font-size: 3rem;
-    margin: 1%;
+    margin: 0%;
     padding: 1%;
     border-radius: 15px;
-    text-align: center
+    text-align: center;
 }
 /*checkout end*/
 
