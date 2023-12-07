@@ -419,9 +419,9 @@ nav, footer {
     object-fit: cover;
 }
 
-.menuPrice::before {
+/*.menuPrice::before {
     content: "$ ";
-}
+}*/
 
 .price-cart {
     display: flex;
@@ -438,7 +438,7 @@ nav, footer {
     display: inline-block;
     margin-top: 0.5em;
     color: rgb(250, 252, 242);
-    transform: translateX(4rem);
+    transform: translateX(-10rem);
 }
 
 .prodBtn,
