@@ -403,8 +403,9 @@ nav, footer {
     background-color: rgb(49,110,53);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
-    height: 37rem;
-    width: 33%; margin: 1%;
+    height: 43rem;
+    width: 33%;
+    margin: 1%;
 }
 
 .product:hover,
