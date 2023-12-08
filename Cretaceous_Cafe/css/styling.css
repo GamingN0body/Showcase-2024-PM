@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gothic+A1&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Oxanium&display=swap');
 
 * {
     box-sizing: border-box;
@@ -51,11 +51,11 @@ img {
 [role="banner"] {
     text-align: center;
     font-size: 5rem;
-    /*color: rgb(250, 252, 242);*/
+    color: rgb(250, 252, 242);
     padding: 1.2rem;
     background: rgb(49,110,53);
     border-radius: 15px;
-    /*margin: 4%;*/
+    margin: 4%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,7 +64,6 @@ img {
 [role="textbox"] {
     color: rgb(250, 252, 242);
     font-size: 2rem;
-    /*transform: translateX(3rem);*/
 }
 
 [role="doc-subtitle"] {
@@ -87,6 +86,46 @@ img {
 #text_link:visited {
     color: rgb(250, 252, 242);
 }
+
+/*nav*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem;
+    padding-left:1em; 
+    padding-top: 2em;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+.headerItem {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.headerItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+
+.headerItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+/*nav end*/
 
 /*Homepage*/
 .home_page_title {
@@ -357,7 +396,7 @@ img {
 /*careers end*/
 
 /*menu*/
-nav, footer {
+nav {
     color: white;
     text-align: right;
     background: black;
@@ -403,8 +442,8 @@ nav, footer {
     background-color: rgb(49,110,53);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
-    height: 43rem;
-    width: 33%;
+    height: 37rem;
+    width: 35%;
     margin: 1%;
 }
 
@@ -421,17 +460,21 @@ nav, footer {
 }
 
 .menuPrice::before {
-    content: (url="/Cretaceous_Cafe/Images/menu/sea bass.jpg");
-}
-
-.price-cart {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
+    content:"";
+    width: 2em;
+    height: 2em;
+    background-image: url("/Cretaceous_Cafe/Images/JurassicPAY\ Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: translateY(0.6em);
 }
 
 .J-pay {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-between;
     scale: 40%;
 }
 
@@ -439,7 +482,7 @@ nav, footer {
     display: inline-block;
     margin-top: 0.5em;
     color: rgb(250, 252, 242);
-    transform: translateX(-10rem);
+    
 }
 
 .prodBtn,
@@ -538,13 +581,6 @@ nav>a:hover {
 
 #cartItemCount::after {
     content: ")";
-}
-
-#price {
-    /*display:flex;
-    align-items: flex-end;
-    justify-content: space-between;*/
-    transform: translateX(10px);
 }
 /*menu end*/
 
@@ -907,18 +943,29 @@ span.price {
 
 /*extra end*/
 
-.pages {
-    margin: 0%;
-    font-size: 1.3rem;
-    text-indent: 30px;
-    background: rgb(250, 252, 242);
-    position: sticky;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+footer {
+    color: rgb(31,108,61);
+    margin: 1%;
+    background-color: rgb(31,108,61);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
 }
 
-@media only screen and (max-width: 640px){
+.pages {
+    margin: 0%;
+    padding: 0%;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+#pages_link{
+    color: rgb(250, 252, 242);
+    margin: 1%;
+}
+
+
+@media only screen and (max-width: 740px) {
     #products {
         grid-template-columns: 1fr;
         padding: 1em;
@@ -931,4 +978,72 @@ span.price {
     .container_co_25 {
         margin-bottom: 20px;
     }
+
+    .order_hp_boxs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order_hp {
+        height: 44rem;
+    }
+
+    #order_title_hp {
+        font-size: 3rem;
+    }
+
+    #order_text_hp {
+        font-size: 2rem;
+    }
+
+/*About the Business*/
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .business_logo {
+        width: 100%;
+    }
+
+    .achievements_paragraph {
+        font-size: 1.5rem;
+    }
+
+    .achievements_mobile {
+        display: flex;
+    }
+
+    .employees_ {
+        flex-wrap: wrap;
+    }
+
+    .careers {
+        flex-wrap: wrap;
+    }
+
+    #careers_paragraph {
+        font-size: 2rem;
+    }
+
+    #careers_img {
+        width:0%;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 100%;
+        height: 26rem;
+    }
+
+    .row_items_menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+/* imagine leaving ur computer open */
+
