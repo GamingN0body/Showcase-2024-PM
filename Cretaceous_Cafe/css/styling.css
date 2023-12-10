@@ -989,6 +989,7 @@ footer {
 
     .order_hp_column {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -1030,8 +1031,32 @@ footer {
         flex-wrap: wrap;
     }
 
-    .img_logo {
-        width: 100%;
+    #img_logo {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 10rem;  
+    }
+
+    .business_logo {
+        height: 5.5em;
+    }
+
+    [role="textbox"] {
+        display: flex;
+        align-items: stretch;
+        height: auto;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .employees_text {
+        width: auto;
+        height: auto;
+    }
+
+    #employee_img {
+        height: auto;
     }
 
     .achievements_paragraph {
@@ -1071,5 +1096,18 @@ footer {
     .row_items_menu {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    /*Review*/
+    #review_image {
+        visibility: hidden;
+    }
+
+    #review_text {
+        font-size: larger;
+    }
+
+    #review {
+        width: 18rem;
     }
 }
