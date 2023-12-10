@@ -36,75 +36,81 @@
     <header>
         <section class="home_page_title">
             <section class="home_page" role="banner">
-                <h1>Cretaceous <br id="cafe_text">Cafe </h1>
+                <h1 id="cretaceous_h1">Cretaceous <br id="cafe_text">Cafe </h1>
             </section>
         </section>
     </header>
     <main>
         <section class="featured">
-            <h2 class="featured_title" id="text_title" role="doc-subtitle"><a id="text_link" href="Menu.html">Featured
-                    Dishs
-                    <br>"Spared no expense!"</a></h2>
-            <section class="favorite" role="rowgroup">
-                <section role="row">
-                    <div class="product"> <!--This one is just bad, maybe old one better-->
-                        <img src="Images/menu/Firefly volcano style chocolate cake; strawberry ice cream on top. recipe book photography 54545.jpg"
-                            alt="image of cake with ice cream in the center" class="menuImage">
-                        <h3 class="menuTitle">
-                            The Volcano
-                        </h3>
-                        <p class="menuParagraph">
-                            Chocolate cake with strawberry ice cream in the middle. The ice cream may be
-                            changed for more feeble customers.
-                        </p>
-                        <span class="menuPrice">140</span><a href="#" class="addToCart prodBtn">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <img src="/Cretaceous_Cafe/Images/menu/salad.jpg" alt="image of salad" class="menuImage">
-                        <h3 class="menuTitle">
-                            Jungle Chunks
-                        </h3>
-                        <p class="menuParagraph">
-                            Greek salad made with pieces of tomatoes, cucumbers, feta cheese, and olives.
-                        </p>
-                        <span class="menuPrice">100</span><a href="#" class="addToCart prodBtn">Add to
-                            Cart</a>
-                    </div>
-                    <div class="product">
-                        <img src="/Cretaceous_Cafe/Images/menu/coffee.jpg" alt="image of coffee" class="menuImage">
-                        <h3 class="menuTitle">
-                            Turkish Coffee
-                        </h3>
-                        <p class="menuParagraph">
-                            Turkish coffee is identified by its rich, earthly taste; incredibly strong.
-                        </p>
-                        <span class="menuPrice">45</span><a href="#" class="addToCart prodBtn">Add to
-                            Cart</a>
-                    </div>
+            <div id="products">
+                <section class="favorite" role="rowgroup">
+                    <h2 class="featured_title" id="text_title" role="doc-subtitle"><a id="text_link"
+                            href="Menu.html">Featured
+                            Dishs
+                            <br>"Spared no expense!"</a></h2>
+                    <section class="row_items_menu" role="row">
+                        <div class="product"> <!--This one is just bad, maybe old one better-->
+                            <img src="Images/menu/Firefly volcano style chocolate cake; strawberry ice cream on top. recipe book photography 54545.jpg"
+                                alt="image of cake with ice cream in the center" class="menuImage">
+                            <h3 class="menuTitle">
+                                The Volcano
+                            </h3>
+                            <p class="menuParagraph">
+                                Chocolate cake with strawberry ice cream in the middle. The ice cream may be
+                                changed for more feeble customers.
+                            </p>
+                            <span class="menuPrice">140</span><a href="#" class="addToCart prodBtn">Add to
+                                Cart</a>
+                        </div>
+                        <div class="product">
+                            <img src="/Cretaceous_Cafe/Images/menu/salad.jpg" alt="image of salad" class="menuImage">
+                            <h3 class="menuTitle">
+                                Jungle Chunks
+                            </h3>
+                            <p class="menuParagraph">
+                                Greek salad made with pieces of tomatoes, cucumbers, feta cheese, and olives.
+                            </p>
+                            <span class="menuPrice">100</span><a href="#" class="addToCart prodBtn">Add to
+                                Cart</a>
+                        </div>
+                        <div class="product">
+                            <img src="/Cretaceous_Cafe/Images/menu/coffee.jpg" alt="image of coffee" class="menuImage">
+                            <h3 class="menuTitle">
+                                Turkish Coffee
+                            </h3>
+                            <p class="menuParagraph">
+                                Turkish coffee is identified by its rich, earthly taste; incredibly strong.
+                            </p>
+                            <span class="menuPrice">45</span><a href="#" class="addToCart prodBtn">Add to
+                                Cart</a>
+                        </div>
+                    </section>
                 </section>
-            </section>
+            </div>
         </section>
         <h2 id="text_title">Are You Ready To Eat?</h2>
-        <section id="order_hp_boxs" role="row">
-            <section class="order_hp">
-                <h3 id="order_title_hp">Reservations</a></h3>
-                <!--Need an image most likely use it in background, you know.-->
-                <p id="order_text_hp" role="textbox">
-                    Have a luxorious dinner with the family and friends, please join
-                    us in the restaurant. Please reserve a dinner at least two months ahead before arriving to the restaurant.
-                </p>
-                <h3 id="button"><a id="text_link" href="Reservations.html">Making a Reservation</a></h3>
-            </section>
-            <section class="order_hp">
-                <h3 id="order_title_hp">Checkout for Dining</a></h3>
-                <!--Need an image most likely use it in background, you know.-->
-                <p id="order_text_hp" role="textbox">
-                    Not only do we serve dine in, we also serve for pick-up at location.
-                    The button below takes you to the checkout page.
-                    Some menu items will not be permitted for pick-up. i.e. VIP dinosaur dining experience.
-                </p>
-                <h3 id="button"><a id="text_link" href="Cart.html">Checkout for Pick-Up</a></h3>
+        <section id="order_hp_column">
+            <section id="order_hp_boxs" role="row">
+                <section class="order_hp">
+                    <h3 id="order_title_hp">Reservations</a></h3>
+                    <!--Need an image most likely use it in background, you know.-->
+                    <p id="order_text_hp" role="textbox">
+                        Have a luxorious dinner with the family and friends, please join
+                        us in the restaurant. Please reserve a dinner at least two months ahead before arriving to the
+                        restaurant.
+                    </p>
+                    <h3 id="button"><a id="text_link" href="Reservations.html">Making a Reservation</a></h3>
+                </section>
+                <section class="order_hp">
+                    <h3 id="order_title_hp">Checkout for Dining</a></h3>
+                    <!--Need an image most likely use it in background, you know.-->
+                    <p id="order_text_hp" role="textbox">
+                        Not only do we serve dine in, we also serve for pick-up at location.
+                        The button below takes you to the checkout page.
+                        Some menu items will not be permitted for pick-up. i.e. VIP dinosaur dining experience.
+                    </p>
+                    <h3 id="button"><a id="text_link" href="Cart.html">Checkout for Pick-Up</a></h3>
+                </section>
             </section>
         </section>
         <section class="reviews_hp">
