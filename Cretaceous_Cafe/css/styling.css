@@ -274,6 +274,12 @@ body {
     margin: 1%;
 }
 
+#row_ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .achievenments {
     background: rgb(161, 165, 141);
     border-radius: 15px;
@@ -282,7 +288,7 @@ body {
 }
 
 #img_logo {
-    width: 60rem;
+    width: 100rem;
 }
 
 .employees_ {
@@ -1039,7 +1045,7 @@ footer {
     }
 
     .business_logo {
-        height: 5.5em;
+        width: 0%;
     }
 
     [role="textbox"] {
@@ -1090,7 +1096,7 @@ footer {
 
     .product {
         width: 100%;
-        height: 26rem;
+        height: 32rem;
     }
 
     .row_items_menu {
