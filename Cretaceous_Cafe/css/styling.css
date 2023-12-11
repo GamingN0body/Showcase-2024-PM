@@ -176,6 +176,16 @@ body {
     width: 50%;
 }
 
+.order_hp-2 {
+    height: 27rem;
+    padding: 1%;
+    margin: 1%;
+    background: rgb(49,110,53);
+    border-radius: 15px;
+    font-size: 3rem;
+    width: 50%;
+}
+
 #order_title_hp {
     color: rgb(250, 252, 242);
     font-size: 4rem;
@@ -1004,17 +1014,24 @@ footer {
     }
 
     .order_hp {
+        display: flex;
+        flex-flow: column nowrap;
         width: 100%;
-        height: 26rem;
+        height: 44rem;
+    }
+
+    .order_hp-2 {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 16rem;
+        height: 44rem;
+        bottom: 10em;
+        transform: translate(-17rem, 46rem);
     }
 
     .row_items_menu {
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    .order_hp {
-        height: 44rem;
+        flex-flow: column wrap;
     }
 
     #order_title_hp {
@@ -1023,6 +1040,12 @@ footer {
 
     #order_text_hp {
         font-size: 2rem;
+    }
+
+    .reviews_hp {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 65rem;
     }
 
 /*About the Business*/
