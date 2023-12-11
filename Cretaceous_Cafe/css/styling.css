@@ -26,7 +26,9 @@ main {
     background-attachment: fixed;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0%;
     font-family: 'Irish Grover';
     color: rgb(250, 252, 242);
@@ -45,7 +47,8 @@ img {
 }
 
 .featured_title {
-    background: rgb(190,157,77);
+    background: rgb(190, 157, 77);
+    padding: 0rem;
 }
 
 [role="banner"] {
@@ -53,7 +56,7 @@ img {
     font-size: 5rem;
     color: rgb(250, 252, 242);
     padding: 1.2rem;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     margin: 4%;
     display: flex;
@@ -88,13 +91,17 @@ img {
 }
 
 /*nav*/
+nav {
+    background-color: rgb(49, 110, 53);
+}
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0rem;
-    padding-left:1em; 
-    padding-top: 2em;
+    /* padding-left:1em; */
+    /* padding-top: 2em;*/
 }
 
 body {
@@ -104,7 +111,7 @@ body {
 .headerItem {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    /* color: #0087ca; */
 }
 
 .headerItem::after {
@@ -125,6 +132,32 @@ body {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
+
+/* Remove underscore for url stuff */
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
 /*nav end*/
 
 /*Homepage*/
@@ -134,23 +167,23 @@ body {
     justify-content: center;
     background-image: url(/Cretaceous_Cafe/Images/home/home_steak.jpg);
     background-size: cover;
-    background-position-y:center;
-    background-position-x:center;
+    background-position-y: center;
+    background-position-x: center;
     height: 50rem;
 }
 
 .customer_favorite {
-    background: rgb(190,157,77);
+    background: rgb(190, 157, 77);
     border-radius: 15px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .featured_hp {
     max-width: 30%;
     padding: 1%;
-    margin: 3rem;
-    background: rgb(190,157,77);
+    margin: rem;
+    background: rgb(190, 157, 77);
     border-radius: 15px;
     font-size: 2rem;
 }
@@ -158,7 +191,7 @@ body {
 #featured_text {
     padding: 1%;
     background: rgb(63.1%, 64.7%, 55.33%);
-    color: rgb(71,53,44);
+    color: rgb(71, 53, 44);
     border-radius: 15px;
 }
 
@@ -167,23 +200,16 @@ body {
 }
 
 .order_hp {
-    height: 27rem;
     padding: 1%;
     margin: 1%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     font-size: 3rem;
     width: 50%;
 }
 
-.order_hp-2 {
-    height: 27rem;
-    padding: 1%;
-    margin: 1%;
-    background: rgb(49,110,53);
-    border-radius: 15px;
-    font-size: 3rem;
-    width: 50%;
+.order_hp {
+    height: fit-content;
 }
 
 #order_title_hp {
@@ -199,36 +225,43 @@ body {
     font-size: 3rem;
     padding: 1%;
     font-size: 2rem;
-    background: rgb(31,108,61);
+    background: rgb(31, 108, 61);
     color: rgb(250, 252, 242);
     border-radius: 15px;
 }
 
 #button {
     padding: 1%;
-    font-size: 2rem;
-    background: rgb(190,157,77);
+    font-size: 3rem;
+    background: rgb(190, 157, 77);
     border-radius: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*we need to figure out how to contain the background around the image, no extra room.*/    
+    /*we need to figure out how to contain the background around the image, no extra room.*/
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reviews_hp {
     padding: 1%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
 }
 
 .reviews_title_hp {
-    background: rgb(190,157,77);
+    background: rgb(190, 157, 77);
     border-radius: 15px;
+    font-size: 4rem;
 }
 
 #review_paragraph {
-    font-size:2rem;
+    font-size: 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -239,12 +272,6 @@ body {
     margin: 2%;
 }
 
-#home-cart {
-    max-width: 33%;
-    width: 500%;
-    scale: 5;
-    transform: translateX(5px);
-}
 /*homepage end*/
 
 /*about page*/
@@ -254,8 +281,8 @@ body {
     justify-content: center;
     background-image: url(/Cretaceous_Cafe/Images/about/volcano.jpg);
     background-size: cover;
-    background-position-y:center;
-    background-position-x:center;
+    background-position-y: center;
+    background-position-x: center;
     height: 50rem;
 }
 
@@ -270,9 +297,9 @@ body {
 
 .about {
     padding: 1%;
-    background: rgb(31,108,61);
+    background: rgb(31, 108, 61);
     border-radius: 15px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: row;
     flex-flow: row;
@@ -280,7 +307,8 @@ body {
     align-items: center;
 }
 
-.achievements_title, .achievements_paragraph {
+.achievements_title,
+.achievements_paragraph {
     margin: 1%;
 }
 
@@ -298,11 +326,12 @@ body {
 }
 
 #img_logo {
-    width: 100rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .employees_ {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-flow: row;
@@ -311,7 +340,7 @@ body {
 .employees_text {
     margin: 2%;
     padding: 1%;
-    background: rgb(31,108,61);
+    background: rgb(31, 108, 61);
     border-radius: 15px;
     width: 35rem;
     height: 35rem;
@@ -319,19 +348,19 @@ body {
 
 .employees_group {
     padding: 1%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-flow: column;
 }
 
-#employee_img{
+#employee_img {
     width: 35rem;
     height: 30rem;
     display: flex;
     justify-items: center;
     align-self: center;
     border-radius: 25%;
-} 
+}
 
 .employees_paragraph {
     margin: 2%;
@@ -340,13 +369,14 @@ body {
     border-radius: 15px;
     width: 35rem;
 }
+
 /*about page end*/
 
 /*review page*/
 #review {
     margin-top: 3%;
     padding: 1%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px
 }
 
@@ -362,7 +392,7 @@ body {
 #review_text {
     font-size: 4rem;
     margin: 1%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
 }
 
@@ -371,14 +401,15 @@ body {
     width: 100%;
     padding: 1%;
 }
+
 /*review page end*/
 
 /*careers*/
 .careers_page_title {
     background-image: url(/Cretaceous_Cafe/Images/backgorund/logo_vine.jpg);
     background-size: cover;
-    background-position-y:center;
-    background-position-x:center;
+    background-position-y: center;
+    background-position-x: center;
     height: 50rem;
     display: flex;
     align-items: flex-start;
@@ -393,36 +424,30 @@ body {
     font-size: 4rem;
 }
 
-.careers{
+.careers {
     display: flex;
 }
 
-#careers_paragraph{
-    font-size:3rem;
+#careers_paragraph {
+    font-size: 3rem;
     padding: 1%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     margin: 0%;
 }
 
-#careers_img{
+#careers_img {
     width: 25rem;
     margin: 1%;
 }
+
 /*careers end*/
 
 /*menu*/
-nav {
-    color: white;
-    text-align: right;
-    background: black;
-    padding: 2rem;
-}
-
 [role="rowheader"] {
     text-align: center;
     font-size: 4rem;
-    background:  rgb(31,108,61);
+    background: rgb(31, 108, 61);
 }
 
 .menu_page_title {
@@ -431,8 +456,8 @@ nav {
     justify-content: center;
     background-image: url("/Cretaceous_Cafe/Images/menu/banner\ menu.jpg");
     background-size: cover;
-    background-position-y:center;
-    background-position-x:center;
+    background-position-y: center;
+    background-position-x: center;
     height: 50rem;
 }
 
@@ -441,7 +466,7 @@ nav {
     font-size: 5rem;
     color: rgb(250, 252, 242);
     padding: 3%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     margin: 4%;
     display: flex;
@@ -455,7 +480,7 @@ nav {
 
 .product {
     border-radius: 15px;
-    background-color: rgb(49,110,53);
+    background-color: rgb(49, 110, 53);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
     height: 37rem;
@@ -476,7 +501,7 @@ nav {
 }
 
 .menuPrice::before {
-    content:"";
+    content: "";
     width: 2em;
     height: 2em;
     background-image: url("/Cretaceous_Cafe/Images/JurassicPAY\ Logo.png");
@@ -498,7 +523,6 @@ nav {
     display: inline-block;
     margin-top: 0.5em;
     color: rgb(250, 252, 242);
-    
 }
 
 .prodBtn,
@@ -510,8 +534,8 @@ nav {
     color: white;
     padding: 1em;
     text-decoration: none;
-    border-radius: 0.5em; 
-    transition: background-color 500ms ease;  
+    border-radius: 0.5em;
+    transition: background-color 500ms ease;
 }
 
 .prodBtn:hover {
@@ -523,6 +547,7 @@ nav {
 #emptyCart {
     background-color: black;
 }
+
 .removeBtn:hover,
 #emptyCart:hover {
     background-color: red;
@@ -548,7 +573,7 @@ nav {
     display: flex;
     gap: 1em;
     position: relative;
-    background-color: rgb(49,110,53);
+    background-color: rgb(49, 110, 53);
 }
 
 .cartItem img {
@@ -598,6 +623,7 @@ nav>a:hover {
 #cartItemCount::after {
     content: ")";
 }
+
 /*menu end*/
 
 /*cart*/
@@ -609,7 +635,7 @@ nav>a:hover {
     height: 10rem;
     font-size: 5rem;
     color: rgb(250, 252, 242);
-    background: rgb(31,108,61);
+    background: rgb(31, 108, 61);
     border-radius: 15px;
 }
 
@@ -619,7 +645,7 @@ nav>a:hover {
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(31,108,61);
+    background: rgb(31, 108, 61);
     border-radius: 15px;
     width: 100%;
 }
@@ -634,7 +660,7 @@ nav>a:hover {
 }
 
 .order_title {
-    background-color: rgb(49,110,53);
+    background-color: rgb(49, 110, 53);
 }
 
 .pick_up {
@@ -646,6 +672,7 @@ nav>a:hover {
     background-color: #BE9D4D;
     margin: 2rem;
 }
+
 /*cart end*/
 
 /*reservation*/
@@ -658,7 +685,7 @@ nav>a:hover {
     font-size: 5rem;
     color: rgb(250, 252, 242);
     padding: 1%;
-    background:  rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     margin: 0%;
 }
@@ -669,36 +696,32 @@ nav>a:hover {
 }
 
 .row {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-flow: row;
 }
 
 .left {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-flow: column;
     font-size: x-large;
     margin: 2%;
-    background: rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     width: 50%;
     height: 50%;
 }
 
 .business_logo {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-flow: row;
     font-size: xx-large;
-    border-radius: 10em;
-    border: ridge;
-    border-style: groove;
-    border-color: orange;
     border-width: 10px;
 }
 
-#logo_img{
+#logo_img {
     width: 15rem;
 }
 
@@ -721,70 +744,70 @@ nav>a:hover {
 }
 
 .reservations_here {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-flow: column;
     margin: 1%;
     font-size: x-large;
-    background:rgb(49,110,53);
+    background: rgb(49, 110, 53);
     border-radius: 15px;
     width: 50%;
 }
 
-.icons span:last-child{
-  margin-right: -10px;
+.icons span:last-child {
+    margin-right: -10px;
 }
 
-.icons span:hover{
-  background: #F70003;
+.icons span:hover {
+    background: #F70003;
 }
 
-.calendar ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  text-align: center;
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
 }
 
-.calendar li{
-  color: #D9DECC;
-  width: 13%;
-  font-size: 1.07rem;
+.calendar li {
+    color: #D9DECC;
+    width: 13%;
+    font-size: 1.07rem;
 }
 
-.calendar .days li{
-  z-index: 1;
-  cursor: pointer;
-  position: relative;
-  margin-top: 0.4rem;
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0.4rem;
 }
 
-.days li.inactive{
-  color: rgb(113,118,104);
+.days li.inactive {
+    color: rgb(113, 118, 104);
 }
 
-.days li.active{
- color: rgb(250,252,242);
+.days li.active {
+    color: rgb(250, 252, 242);
 }
 
-.days li::before{
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  height: 2rem;
-  width: 2rem;
-  z-index: -1;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 2rem;
+    width: 2rem;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.days li:not(.active):hover::before{
+.days li:not(.active):hover::before {
     background: #F70003;
 }
 
 .times {
-    background: rgb(190,157,77);
+    background: rgb(190, 157, 77);
     border-radius: 15px;
     color: rgb(250, 252, 242);
     text-align: center;
@@ -810,7 +833,7 @@ button {
 }
 
 button:active {
-    background-color: #04AA6D; 
+    background-color: #04AA6D;
 }
 
 #reservation_icon_text {
@@ -825,7 +848,7 @@ button:active {
 }
 
 .button {
-    background: rgb(190,157,77);
+    background: rgb(190, 157, 77);
     border-radius: 15px;
     color: rgb(250, 252, 242);
     text-align: center;
@@ -834,16 +857,14 @@ button:active {
 /*checkout*/
 .title {
     display: flex;
-    font-size: xx-large;
+    font-size: x-large;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 10rem;
     font-size: 5rem;
-    color: rgb(217, 217, 217);
-    padding: 1%;
-    background: rgb(161, 165, 141);
+    color: rgb(250, 252, 242);
+    background: rgb(31, 108, 61);
     border-radius: 15px;
-    margin: 2%;
 }
 
 .link_co {
@@ -851,25 +872,25 @@ button:active {
 }
 
 .row_co {
-    display: -ms-flexbox; 
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -16px;
 }
 
 .container_co_25 {
-    -ms-flex: 25%; 
+    -ms-flex: 25%;
     flex: 25%;
 }
 
 .content_head_co {
-    -ms-flex: 50%; 
+    -ms-flex: 50%;
     flex: 50%;
 }
 
 .container_co_75 {
-    -ms-flex: 75%; 
+    -ms-flex: 75%;
     flex: 75%;
 }
 
@@ -882,7 +903,7 @@ button:active {
 .container {
     color: rgb(250, 252, 242);
     margin: 1%;
-    background-color: rgb(31,108,61);
+    background-color: rgb(31, 108, 61);
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 15px;
@@ -941,6 +962,7 @@ span.price {
     border-radius: 15px;
     text-align: center;
 }
+
 /*checkout end*/
 
 /*extra*/
@@ -960,22 +982,21 @@ span.price {
 /*extra end*/
 
 footer {
-    color: rgb(31,108,61);
-    margin: 1%;
-    background-color: rgb(31,108,61);
+    color: rgb(31, 108, 61);
+    margin: 0%;
+    background-color: rgb(31, 108, 61);
     padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 15px;
+    border: 1px solid;
 }
 
 .pages {
     margin: 0%;
     padding: 0%;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: left;
 }
 
-#pages_link{
+#pages_link {
     color: rgb(250, 252, 242);
     margin: 1%;
 }
@@ -986,13 +1007,13 @@ footer {
         font-size: 4rem;
     }
 
+    h2 {
+        width: 100%;
+    }
+
     #products {
         grid-template-columns: 1fr;
         padding: 1em;
-    }
-
-    .row_co {
-        flex-direction: column-reverse;
     }
 
     #text_title {
@@ -1003,16 +1024,6 @@ footer {
         height: 30rem;
     }
 
-    .order_hp_column {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .container_co_25 {
-        margin-bottom: 20px;
-    }
-
     #order_hp_column {
         display: flex;
         flex-direction: column;
@@ -1020,19 +1031,15 @@ footer {
     }
 
     .order_hp {
+        font-size: 1rem;
         display: flex;
         flex-flow: column nowrap;
         width: 100%;
-        height: 44rem;
+        height: 40rem;
     }
 
-    .order_hp-2 {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 16rem;
-        height: 44rem;
-        bottom: 10em;
-        transform: translate(-17rem, 46rem);
+    .button {
+        font-size: 2rem;
     }
 
     .row_items_menu {
@@ -1044,6 +1051,19 @@ footer {
         font-size: 3rem;
     }
 
+    #review_paragraph {
+        font-size: 2rem;
+    }
+
+    .people_img_1, .people_img_3 {
+        width: 45%;
+    }
+
+
+    .people_img_2 {
+        width: 0%;
+    }
+
     #order_text_hp {
         font-size: 2rem;
     }
@@ -1051,10 +1071,9 @@ footer {
     .reviews_hp {
         display: flex;
         flex-flow: column wrap;
-        margin-top: 65rem;
     }
 
-/*About the Business*/
+    /*About the Business*/
     .about {
         display: flex;
         flex-wrap: wrap;
@@ -1062,13 +1081,15 @@ footer {
 
     #img_logo {
         display: flex;
-        justify-content:center;
+        flex-flow: row nowrap;
+        justify-content: center;
         align-items: center;
-        height: 10rem;  
+        height: 10rem;
+        width: 0%;
     }
 
     .business_logo {
-        width: 0%;
+        height: auto;
     }
 
     [role="textbox"] {
@@ -1086,6 +1107,11 @@ footer {
 
     #employee_img {
         height: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 
     .achievements_paragraph {
@@ -1109,7 +1135,7 @@ footer {
     }
 
     #careers_img {
-        width:0%;
+        width: 0%;
     }
 
     .products {
@@ -1129,7 +1155,7 @@ footer {
 
     /*Review*/
     #review_image {
-        visibility: hidden;
+        width: 0%;
     }
 
     #review_text {
@@ -1138,5 +1164,42 @@ footer {
 
     #review {
         width: 18rem;
+    }
+
+    /*Revervations*/
+    .left {
+        width: 100%;
+    }
+
+    .business_logo {
+        height: auto;
+    }
+
+    #logo_img {
+        width: 0%;
+    }
+
+    #text_title {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #smaller_text {
+        font-size: 2rem;
+    }
+
+    .reservations_here {
+        width: fit-content;
+    }
+
+    .reservation_icon {
+        flex-direction: column;
+    }
+
+    .headerItem {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 10px;
     }
 }

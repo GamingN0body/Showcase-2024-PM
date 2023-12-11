@@ -14,6 +14,27 @@
 </head>
 
 <body>
+    <header>
+        <section>
+            <nav>
+                <section class="header">
+                    <p class="headerItem"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></p>
+                    <p class="headerItem"><a href="experiences.html"><i
+                                class="fa-solid fa-compass"></i>&nbsp;Experiences</a></p>
+                    <p class="headerItem"><i class="fa-solid fa-utensils"></i>&nbsp;Dining</p>
+                    <p class="headerItem"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Shopping</p>
+                    <p class="headerItem"><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp;About
+                            Us</a></p>
+                    <p class="headerItem"><a href="staff.html"><i class="fa-solid fa-users"></i>&nbsp;Our Staff</a></p>
+                    <p class="headerItem"><a href="jurassicpay.html"><i
+                                class="fa-solid fa-coins"></i>&nbsp;JurassicPAY</a></p>
+                    <p class="headerItem"><i class="fa-solid fa-ticket"></i>&nbsp;Tickets</p>
+                    <p class="headerItem"><a href="cart.html"><i class="fa-solid"></i><span
+                                id="cartItemCount"></span></a>&nbsp;Cart</p>
+                </section>
+            </nav>
+        </section>
+    </header>
     <main>
         <section class="title" role="banner">
             <h1>Reservations</h1>
@@ -21,7 +42,6 @@
         <section class="row">
             <section class="left">
                 <section class="business_logo">
-                    <img id="logo_img" src="/Cretaceous_Cafe/Images/logo.png" alt="business logo">
                     <h2 id="text_title">
                         Business Hours:
                         <p id="smaller_text"> 05:00 pm to 09:00 pm
@@ -29,40 +49,16 @@
                         </p>
                     </h2>
                 </section>
-                <section class="hours">
-                </section>
                 <section class="featured">
-                    <section class="clocs" role="rowgroup">
-                        <section role="row">
-                            <section class="menu_item" role="group">
-                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/dino steak2.jpg"
-                                    alt="Image of a dinosaur steak.">
-                                <h3 id="menu_item_title_r">Dinosaur Meat</h3>
-                                <p id="menu_item_paragraph_r">
-                                    Advertised as similar to that of modern-day birds or reptiles. It sources
-                            from Expeditions section of the park.
-                                </p>
-                            </section>
-                            <section class="menu_item" role="group">
-                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/sea bass.jpg"
-                                    alt="Image of seabass.">
-                                <h3 id="menu_item_title_r">Chilean Sea Bass</h3>
-                                <p id="menu_item_paragraph_r">
-                                    It’s the chief's favorite and our most iconic dish.
-                                    People like John Hammond and Ian Malcolm had given it good reviews.
-                                </p>
-                            </section>
-                            <section class="menu_item" role="group">
-                                <img id="menu_item_img" src="/Cretaceous_Cafe/Images/menu/salmon.jpg"
-                                    alt="Image of grilled salmon.">
-                                <h3 id="menu_item_title_r">Piscivore</h3>
-                                <p id="menu_item_paragraph_r">
-                                    A grilled salmon. Made with a special ingredient by our Owner, Alain Richard.
-                                    It is seasoned with dry mustard powder.
-                                </p>
-                            </section>
-                        </section>
+                    <section class="cart_title" role="banner">
+                        <h1>Cart</h1>
                     </section>
+
+                    <div id="cart">
+
+
+
+                    </div>
                 </section>
             </section>
             <section class="reservations_here">
@@ -74,44 +70,46 @@
                     </section>
                     <section class="calendar">
                         <ul class="weeks">
-                            <li id="week_day">Sunday</li>
-                            <li id="week_day">Monday</li>
-                            <li id="week_day">Tuesday</li>
-                            <li id="week_day">Wednesday</li>
-                            <li id="week_day">Thusday</li>
-                            <li id="week_day">Friday</li>
-                            <li id="week_day">Saturday</li>
+                            <li id="week_day">Sun</li>
+                            <li id="week_day">Mon</li>
+                            <li id="week_day">Tues</li>
+                            <li id="week_day">Wed</li>
+                            <li id="week_day">Thus</li>
+                            <li id="week_day">Fri</li>
+                            <li id="week_day">Sat</li>
                         </ul>
                         <ul class="days"></ul>
                     </section>
                 </section>
-                    <section class="reservation_icon">
-                            <button class="times">
-                                <h2 id="time_text">5:00 p.m.</h2>
-                            </button>
-                            <button class="times">
-                                <h2 id="time_text">6:00 p.m.</h2>
-                            </button>
-                            <button class="times">
-                                <h2 id="time_text">7:00 p.m.</h2>
-                            </button>
-                            <button class="times">
-                                <h2 id="time_text">8:00 p.m.</h2>
-                            </button>
-                            <button class="times">
-                                <h2 id="time_text">9:00 p.m.</h2>
-                            </button>
-                    </section>
+                <section class="reservation_icon">
+                    <button class="times">
+                        <h2 id="time_text">5:00 p.m.</h2>
+                    </button>
+                    <button class="times">
+                        <h2 id="time_text">6:00 p.m.</h2>
+                    </button>
+                    <button class="times">
+                        <h2 id="time_text">7:00 p.m.</h2>
+                    </button>
+                    <button class="times">
+                        <h2 id="time_text">8:00 p.m.</h2>
+                    </button>
+                    <button class="times">
+                        <h2 id="time_text">9:00 p.m.</h2>
+                    </button>
+                </section>
                 <section class="reservation_icon">
                     <img id="reservation_icon_img"
                         src="/Cretaceous_Cafe/Images/Reservations/People_person-removebg-preview.png"
                         alt="An icon representing the amount of people.">
                     <p id="reservation_icon_text">
-                        2 Peeps
+                        Select Persons
                     </p>
                 </section>
                 <section class="button">
-                    <a class="button" href="/Cretaceous_Cafe/Checkout.html"><h2>Continue to Checkout</h2></a>
+                    <a class="button" href="/Cretaceous_Cafe/Checkout.html">
+                        <h2>Continue to Checkout</h2>
+                    </a>
                 </section>
             </section>
         </section>

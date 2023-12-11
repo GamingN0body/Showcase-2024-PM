@@ -14,97 +14,118 @@
 </head>
 
 <body>
+    <header>
+        <section>
+            <nav>
+                <section class="header">
+                    <p class="headerItem"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></p>
+                    <p class="headerItem"><a href="experiences.html"><i
+                                class="fa-solid fa-compass"></i>&nbsp;Experiences</a></p>
+                    <p class="headerItem"><i class="fa-solid fa-utensils"></i>&nbsp;Dining</p>
+                    <p class="headerItem"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Shopping</p>
+                    <p class="headerItem"><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp;About
+                            Us</a></p>
+                    <p class="headerItem"><a href="staff.html"><i class="fa-solid fa-users"></i>&nbsp;Our Staff</a></p>
+                    <p class="headerItem"><a href="jurassicpay.html"><i
+                                class="fa-solid fa-coins"></i>&nbsp;JurassicPAY</a></p>
+                    <p class="headerItem"><i class="fa-solid fa-ticket"></i>&nbsp;Tickets</p>
+                    <p class="headerItem"><a href="cart.html"><i class="fa-solid"></i><span
+                                id="cartItemCount"></span></a>&nbsp;Cart</p>
+                </section>
+            </nav>
+        </section>
+    </header>
     <main>
         <section class="checkout_title" role="banner">
             <section class="title">
                 <h1>Checkout</h1>
             </section>
         </section>
-            <section class="container_co_75">
-                <section class="container">
+        <section class="container_co_75">
+            <section class="container">
 
-                    <section class="row_co">
-                        <section class="content_head_co">
-                            <h3>Billing Address</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                            <input type="text" id="fname" name="firstname">
-                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="text" id="email" name="email">
-                            <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
-                            <input type="text" id="adr" name="address">
-                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                            <input type="text" id="city" name="city">
+                <section class="row_co">
+                    <section class="content_head_co">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email">
+                        <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city">
 
-                            <section class="row_co">
-                                <section class="content_head_co">
-                                    <label for="state">State</label>
-                                    <input type="text" id="state" name="state">
-                                </section>
-                                <section class="content_head_co">
-                                    <label for="zip">Zip</label>
-                                    <input type="text" id="zip" name="zip">
-                                </section>
+                        <section class="row_co">
+                            <section class="content_head_co">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state">
+                            </section>
+                            <section class="content_head_co">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip">
                             </section>
                         </section>
-
-                        <section class="content_head_co">
-                            <h3>Payment</h3>
-                            <label for="fname">Accepted Cards</label>
-                            <section class="icon-container">
-                                <i class="fa fa-cc-visa"></i>
-                                <i class="fa fa-cc-amex"></i>
-                                <i class="fa fa-cc-mastercard"></i>
-                                <i class="fa fa-cc-discover"></i>
-                            </section>
-                            <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname">
-                            <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber">
-                            <label for="expmonth">Exp Month</label>
-                            <input type="text" id="expmonth" name="expmonth">
-
-                            <section class="row_co">
-                                <section class="content_head_co">
-                                    <label for="expyear">Exp Year</label>
-                                    <input type="text" id="expyear" name="expyear">
-                                </section>
-                                <section class="row_co">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv">
-                                </section>
-                            </section>
-                        </section>
-
                     </section>
-                    <label>
-                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as
-                        billing
-                    </label>
-                    <input type="submit" value="Continue" class="bill_input">
-                    </form>
+
+                    <section class="content_head_co">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <section class="icon-container">
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-amex"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                            <i class="fa fa-cc-discover"></i>
+                        </section>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth">
+
+                        <section class="row_co">
+                            <section class="content_head_co">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear">
+                            </section>
+                            <section class="row_co">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv">
+                            </section>
+                        </section>
+                    </section>
+
                 </section>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as
+                    billing
+                </label>
+                <input type="submit" value="Continue" class="bill_input">
+                </form>
             </section>
-            <section class="container_co_25">
-                <section class="cart_title" role="banner">
-                    <h1>Cart</h1>
-                </section>
-
-                <div id="cart">
-
-
-
-                </div>
+        </section>
+        <section class="container_co_25">
+            <section class="cart_title" role="banner">
+                <h1>Cart</h1>
             </section>
-            <footer>
-                <section class="pages">
-                    <h2><a id="pages_link" href="Homepage.html">Cretaceous Cafe</a></h2>
-                    <h2><a id="pages_link" href="AbouttheBusiness.html">About Our Business</a></h2>
-                    <h2><a id="pages_link" href="Careers.html">Careers</a></h2>
-                    <h2><a id="pages_link" href="Menu.html">Menu</a></h2>
-                    <h2><a id="pages_link" href="Reservations.html">Reservations</a></h2>
-                    <h2><a id="pages_link" href="Checkout.html">Pickup</a></h2>
-                </section>
-            </footer>
+
+            <div id="cart">
+
+
+
+            </div>
+        </section>
+        <footer>
+            <section class="pages">
+                <h2><a id="pages_link" href="Homepage.html">Cretaceous Cafe</a></h2>
+                <h2><a id="pages_link" href="AbouttheBusiness.html">About Our Business</a></h2>
+                <h2><a id="pages_link" href="Careers.html">Careers</a></h2>
+                <h2><a id="pages_link" href="Menu.html">Menu</a></h2>
+                <h2><a id="pages_link" href="Reservations.html">Reservations</a></h2>
+                <h2><a id="pages_link" href="Checkout.html">Pickup</a></h2>
+            </section>
+        </footer>
     </main>
 
 </body>
