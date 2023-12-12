@@ -96,22 +96,16 @@ nav {
 }
 
 .header {
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0rem;
-    /* padding-left:1em; */
-    /* padding-top: 2em;*/
-}
-
-body {
-    margin-bottom: 0;
 }
 
 .headerItem {
     display: inline-block;
     position: relative;
-    /* color: #0087ca; */
 }
 
 .headerItem::after {
@@ -132,8 +126,6 @@ body {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
-
-/* Remove underscore for url stuff */
 
 a:link {
     text-decoration: none;
@@ -158,6 +150,37 @@ a {
     color: white;
 }
 
+.pages_top {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem;
+}
+
+.pages_link_top {
+    display: inline-block;
+    position: relative;
+}
+
+.pages_link_top::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+
+.pages_link_top:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
 /*nav end*/
 
 /*Homepage*/
@@ -313,6 +336,7 @@ a {
 
 .achievements_title,
 .achievements_paragraph {
+    font-size: 1.5rem;
     margin: 1%;
 }
 
@@ -995,6 +1019,11 @@ footer {
     border: 1px solid;
 }
 
+.bottom_nav {
+    display: flex;
+    flex-direction: row;
+}
+
 .pages {
     margin: 0%;
     padding: 0%;
@@ -1008,10 +1037,25 @@ footer {
     font-size: 30px;
 }
 
+#fake_icon {
+    width: fit-content;
+    transform: translateX(260px);
+}
+
+#our_icon {
+    width: 24rem;
+    transform: translateX(120px);
+}
+
+
 
 @media only screen and (max-width: 740px) {
     h1 {
         font-size: 4rem;
+    }
+
+    #fake_icon, #our_icon {
+        width: 0%;
     }
 
     h2 {
@@ -1023,8 +1067,18 @@ footer {
     display: inline-block;
     position: relative;
     font-size: xx-small;
-    
 }
+
+.pages_top {
+    display: flex;
+    position: relative;
+    font-size: smaller;
+    padding: 3px;
+}
+
+.pages_link_top {
+    padding: 3px;
+    }
 /*Nav End*/
 
     #products {
@@ -1258,10 +1312,6 @@ footer {
 
     .pick_up {
         width: 10%;
-    }
-
-    .dine {
-
     }
 
     /*Footer*/
