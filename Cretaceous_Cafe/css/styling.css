@@ -58,7 +58,7 @@ img {
     padding: 1.2rem;
     background: rgb(49, 110, 53);
     border-radius: 15px;
-    margin: 4%;
+    margin: 0.5%;  /*change this for reservations white space, originally 4*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -272,6 +272,10 @@ a {
     margin: 2%;
 }
 
+.row_items_menu {
+    height: 37rem;
+}
+
 /*homepage end*/
 
 /*about page*/
@@ -326,8 +330,8 @@ a {
 }
 
 #img_logo {
-    width: 10rem;
-    height: 10rem;
+    width: 55rem;
+    height: 15rem;
 }
 
 .employees_ {
@@ -483,7 +487,7 @@ a {
     background-color: rgb(49, 110, 53);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
-    height: 37rem;
+    height: auto;
     width: 35%;
     margin: 1%;
 }
@@ -560,7 +564,7 @@ a {
 #cart {
     max-width: 1280px;
     margin: 0 auto;
-    display: grid;
+    display: -ms-inline-grid;
     grid-auto-rows: 25vh;
     gap: 1em;
     margin-bottom: 2rem;
@@ -648,6 +652,8 @@ nav>a:hover {
     background: rgb(31, 108, 61);
     border-radius: 15px;
     width: 100%;
+    transform: translateX(13rem); 
+    margin-top: 40px;
 }
 
 .order_title {
@@ -705,11 +711,11 @@ nav>a:hover {
     display: flex;
     flex-direction: column;
     flex-flow: column;
-    font-size: x-large;
+    font-size: large;
     margin: 2%;
     background: rgb(49, 110, 53);
     border-radius: 15px;
-    width: 50%;
+    width: 50rem;
     height: 50%;
 }
 
@@ -999,6 +1005,7 @@ footer {
 #pages_link {
     color: rgb(250, 252, 242);
     margin: 1%;
+    font-size: 30px;
 }
 
 
@@ -1011,12 +1018,22 @@ footer {
         width: 100%;
     }
 
+/*Nav*/
+.headerItem {
+    display: inline-block;
+    position: relative;
+    font-size: xx-small;
+    
+}
+/*Nav End*/
+
     #products {
         grid-template-columns: 1fr;
         padding: 1em;
     }
 
     #text_title {
+        display: flex;
         font-size: 2rem;
     }
 
@@ -1035,7 +1052,7 @@ footer {
         display: flex;
         flex-flow: column nowrap;
         width: 100%;
-        height: 40rem;
+        height: auto;
     }
 
     .button {
@@ -1045,6 +1062,7 @@ footer {
     .row_items_menu {
         display: flex;
         flex-flow: column wrap;
+        height: auto;
     }
 
     #order_title_hp {
@@ -1145,7 +1163,7 @@ footer {
 
     .product {
         width: 100%;
-        height: 32rem;
+        height: 26rem;
     }
 
     .row_items_menu {
@@ -1201,5 +1219,54 @@ footer {
         align-items: center;
         justify-content: flex-start;
         padding-right: 10px;
+    }
+
+    /*Cart*/
+
+    #cart {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-rows: 25vh;
+        gap: 1em;
+        margin-bottom: 2rem;
+    }
+
+    .cartItem {
+        display: flex;
+        gap: 1em;
+        height: 12rem;
+        margin-bottom: 10rem;
+        padding: 0.5rem;
+        position: relative;
+    }
+
+    .cartItemInfo {
+        font-size: 12px;
+    }
+
+    .cartItemPricing {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order {
+        transform: translateX(0);
+    }
+
+    .pick_up {
+        width: 10%;
+    }
+
+    .dine {
+
+    }
+
+    /*Footer*/
+
+    #pages_link {
+        font-size: xx-large;
     }
 }
