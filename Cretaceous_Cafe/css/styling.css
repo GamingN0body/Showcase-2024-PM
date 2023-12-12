@@ -1046,6 +1046,10 @@ footer {
         font-size: 4rem;
     }
 
+    #fake_icon, #our_icon {
+        width: 0%;
+    }
+
     h2 {
         width: 100%;
     }
