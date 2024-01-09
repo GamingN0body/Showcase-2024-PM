@@ -963,7 +963,7 @@ label {
     font-size: 24px;
 }
 
-.bill_input {
+#bill_input {
     background-color: #04AA6D;
     color: rgb(250, 252, 242);
     padding: 12px;
@@ -973,6 +973,51 @@ label {
     border-radius: 3px;
     cursor: pointer;
     font-size: 17px;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#bill_input .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  #bill_input .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;}
+
+        #bill-input .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 .bill_input:hover {
@@ -1220,7 +1265,7 @@ footer {
 
     .product {
         width: 100%;
-        height: 26rem;
+        height: 26%;
     }
 
     .row_items_menu {
