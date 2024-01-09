@@ -1083,7 +1083,7 @@ footer {
 
     #products {
         grid-template-columns: 1fr;
-        padding: 1em;
+        padding: 0em;
     }
 
     #text_title {
@@ -1131,6 +1131,9 @@ footer {
         width: 45%;
     }
 
+    .reviews_title_hp {
+        justify-content: center;
+    }
 
     .people_img_2 {
         width: 0%;
