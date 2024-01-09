@@ -1115,7 +1115,7 @@ footer {
 
     .row_items_menu {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         height: auto;
     }
 
