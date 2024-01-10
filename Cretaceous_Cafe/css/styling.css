@@ -47,7 +47,7 @@ img {
 }
 
 .featured_title {
-    background: rgb(190, 157, 77);
+    color: rgb(250, 252, 242);
     padding: 0rem;
 }
 
@@ -131,16 +131,13 @@ a:link {
     text-decoration: none;
 }
 
-
 a:visited {
     text-decoration: none;
 }
 
-
 a:hover {
     text-decoration: none;
 }
-
 
 a:active {
     text-decoration: none;
@@ -193,6 +190,45 @@ a {
     background-position-y: center;
     background-position-x: center;
     height: 50rem;
+}
+
+#google_translate_element {
+    display: flex;
+    background-color: rgb(47, 185, 56);
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.third_hp {
+    color: rgb(250, 252, 242);
+}
+
+.one_third {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(49, 110, 53);
+    border-radius: 15px;
+    width: 33%;
+    height: 55.5rem;
+}
+
+#click_hp{
+    font-size: 3em;
+}
+
+#clickimg {
+    max-width: 100%;
+    width: 70rem;
+}
+
+.text_third_hp {
+    color: rgb(250, 252, 242);
+}
+
+.clickable {
+    background: rgb(190, 157, 77);
+    text-align: center;
+    border-radius: 15px;
 }
 
 .customer_favorite {
@@ -278,7 +314,6 @@ a {
 }
 
 .reviews_title_hp {
-    background: rgb(190, 157, 77);
     border-radius: 15px;
     font-size: 4rem;
 }
@@ -663,7 +698,7 @@ nav>a:hover {
     height: 10rem;
     font-size: 5rem;
     color: rgb(250, 252, 242);
-    background: rgb(31, 108, 61);
+    background: /*rgb(31, 108, 61)*/ rgb(49, 110, 53);
     border-radius: 15px;
 }
 
@@ -676,7 +711,6 @@ nav>a:hover {
     background: rgb(31, 108, 61);
     border-radius: 15px;
     width: 100%;
-    transform: translateX(13rem); 
     margin-top: 40px;
 }
 
@@ -979,7 +1013,21 @@ label {
   user-select: none;
 }
 
-#bill_input .popuptext {
+.popup {
+    position: relative;
+    background-color: goldenrod;
+    padding: 1%;
+    margin: 0%;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.popup .popuptext {
     visibility: hidden;
     width: 160px;
     background-color: #555;
@@ -994,7 +1042,7 @@ label {
     margin-left: -80px;
   }
 
-  #bill_input .popuptext::after {
+  .popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -1004,7 +1052,7 @@ label {
     border-style: solid;
     border-color: #555 transparent transparent transparent;}
 
-        #bill-input .show {
+        .popup .show {
         visibility: visible;
         -webkit-animation: fadeIn 1s;
         animation: fadeIn 1s;
@@ -1263,12 +1311,12 @@ footer {
         flex-wrap: wrap;
     }
 
-    .product {
+    .product, .one_third {
         width: 100%;
         height: 26%;
     }
 
-    .row_items_menu {
+    .row_items_menu, .third_hp {
         display: flex;
         flex-wrap: wrap;
     }

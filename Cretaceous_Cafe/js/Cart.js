@@ -12,6 +12,11 @@ const
     cartItemCountID = 'cartItemCount';
 
 
+        function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+
     // check if shop exists in local storage, create it if not
 if (localStorage.getItem(shopID) === null) {
     localStorage.setItem(shopID, JSON.stringify({ cart: [] }));
