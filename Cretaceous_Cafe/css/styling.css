@@ -1016,6 +1016,7 @@ label {
 .popup {
     position: relative;
     background-color: goldenrod;
+    border-radius: 10rem;
     padding: 1%;
     margin: 0%;
     display: inline-block;
