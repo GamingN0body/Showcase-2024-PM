@@ -1132,12 +1132,13 @@ footer {
 
 #fake_icon {
     width: fit-content;
-    transform: translateX(260px);
+    translate: 55rem;
+    transform: translateY(50%);
 }
 
 #our_icon {
     width: 24rem;
-    transform: translateX(120px);
+    transform: translateX(33rem);
 }
 
 
